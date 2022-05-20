@@ -8,7 +8,7 @@
 
 ## LuaJIT
 
-- [LuaJIT](http://luajit.org/)からDLしてビルドする  
+- [LuaJIT](http://luajit.org/)からDLしてビルドする
 - もしくはビルドしてくれている[ここ](https://scrapbox.io/ePi5131/LuaJIT)からDL
   - `LuaJIT-2.1.0-beta3`
 
@@ -219,10 +219,13 @@ in-out
   - [グラデーション縁取り＋](https://www.nicovideo.jp/watch/sm40105334)
   - [ディフュージョン](https://www.nicovideo.jp/watch/sm40317056)
   - [コントラスト比自動計算](https://www.nicovideo.jp/watch/sm40317056)
+  - [任意番号個別エフェクト](https://twitter.com/CaffemochaY/status/1524698397952909312)
 
 - [ePi](https://scrapbox.io/ePi5131/)
+  - [ease](https://scrapbox.io/ePi5131/ease)
   - [koma](https://scrapbox.io/ePi5131/koma.anm)
   - [斜](https://scrapbox.io/ePi5131/AviUtl_任意の角度がついた斜体を作ろう)
+  - [汎用トラックバー](https://scrapbox.io/ePi5131/汎用トラックバー)
   - [aulut](https://scrapbox.io/ePi5131/aulut)
     - [35 Free LUTs for Color Grading Videos](https://www.rocketstock.com/free-after-effects-templates/35-free-luts-for-color-grading-videos/)
 
@@ -268,9 +271,6 @@ in-out
   - [トーンカーブRGB改](https://madeinpc.blog.fc2.com/blog-entry-1146.html)
   - [トーンカーブHSV改](https://madeinpc.blog.fc2.com/blog-entry-1148.html)
   - [RGB順序入れ替え(DLL)](https://madeinpc.blog.fc2.com/blog-entry-1311.html)
-
-- [mes](https://www.nicovideo.jp/user/56278)
-  - [Unmult](https://www.nicovideo.jp/watch/sm39935396)
 
 - [mina](https://www.nicovideo.jp/user/117083491)
   - [雑縁取り](https://www.nicovideo.jp/watch/sm39488375)
