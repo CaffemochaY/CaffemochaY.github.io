@@ -6,6 +6,8 @@ github-pages用のレポジトリ
 
 ### github-markdown-css
 
+<https://github.com/sindresorhus/github-markdown-css>
+
 ```txt
 MIT License
 
