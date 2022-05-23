@@ -34,6 +34,79 @@ in-out
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
   - `patch.aul r21`
+  - <details><summary>json-setting</summary>
+
+    ```json
+    {
+      "console" : {
+        "visible" : true,
+        "rect" : [ -8, 499, 1425, 1047 ]
+      },
+      "theme_cc" : {
+        "layer" : {
+          "height_large" : 27,
+          "height_medium" : 23,
+          "height_small" : 19,
+          "link_col" : "4040c0",
+          "clipping_col" : "c04040",
+          "lock_col" : [ "000000", "c04040" ],
+          "hide_alpha" : 0.850000
+        },
+        "object" : {
+          "media_col" : [ "10206c", "1830c0", "4080ff" ],
+          "mfilter_col" : [ "106c10", "18c018", "40f040" ],
+          "audio_col" : [ "6c1018", "c01820", "f83040" ],
+          "afilter_col" : [ "6c6c10", "c0c020", "d8d840" ],
+          "control_col" : [ "106c6c", "18c0c0", "40d8d8" ],
+          "inactive_col" : [ "606060", "808080", "909090" ],
+          "clipping_col" : "c04040",
+          "clipping_height" : -3,
+          "midpt_size" : [ 4, 3, 3 ],
+          "name_col" : [ "ffffff", "a0a0a0" ]
+        },
+        "timeline" : {
+          "scale_col" : [ "60a0ff", "204080" ],
+          "bpm_grid_col" : [ "646464", "a0a0a0" ]
+        }
+      },
+      "switch" : {
+        "access_key" : false,
+        "exo_aviutl_filter" : true,
+        "exo_track_minusval" : true,
+        "exo_sceneidx" : true,
+        "exo_trackparam" : true,
+        "exo_specialcolorconv" : true,
+        "text_op_size" : true,
+        "ignore_media_param_reset" : false,
+        "theme_cc" : true,
+        "exeditwindow_sizing" : true,
+        "settingdialog_move" : true,
+        "undo" : true,
+        "undo.redo" : true,
+        "undo.redo.shift" : false,
+        "console" : true,
+        "console.escape" : true,
+        "console.input" : false,
+        "console.debug_string" : true,
+        "console.debug_string.time" : true,
+        "lua" : true,
+        "lua.env" : false,
+        "lua.rand" : true,
+        "lua.randex" : true,
+        "lua.getvalue" : true,
+        "lua.path" : true,
+        "fast" : true,
+        "fast.cl" : true,
+        "fast.exeditwindow" : true,
+        "fast.exeditwindow.step" : 0,
+        "fast.settingdialog" : true,
+        "fast.radiationalblur" : true,
+        "fast.polortransform" : true
+      }
+    }
+    ```
+
+    </details>
 - [InputPipePlugin](https://www.nicovideo.jp/watch/sm35585310)
   - `InputPipePlugin v1.8`
 
@@ -64,10 +137,60 @@ in-out
 
 - [フィルタドラッグ移動](https://github.com/hebiiro/AviUtl-Plugin-DragFilter)
   - `フィルタドラッグ移動 v9.0.0`
+  - <details><summary>ini-setting</summary>
+
+    ```ini
+    [TargetMark]
+    alpha=0
+    penColor=0,0,0,0
+    penWidth=0
+    brushColor=255,255,255,255
+    base=0
+    width=0
+    fontName=Segoe UI
+    fontSize=32
+    rotate=0
+    beginMoveX=0
+    beginMoveY=0
+    ```
+
+    </details>
 - [お気に入りフォント選択](https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont)
   - `お気に入りフォント選択 v5.2.1`
 - [エディットボックス最適化](https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox)
   - `エディットボックス最適化 version 7.1.1`
+  - <details><summary>ini-setting</summary>
+
+    ```ini
+    [Settings]
+    optimizeTimeLine=1
+    editBoxDelay=250
+    usesUnicodeInput=1
+    usesCtrlA=1
+    usesSetRedraw=1
+    usesGradientFill=0
+    innerColorR=0xff
+    innerColorG=0xff
+    innerColorB=0xff
+    innerEdgeWidth=0
+    innerEdgeHeight=0
+    outerColorR=0xf0
+    outerColorG=0x80
+    outerColorB=0x40
+    outerEdgeWidth=1
+    outerEdgeHeight=0
+    selectionColor=-1
+    selectionEdgeColor=-1
+    selectionBkColor=-1
+    layerBorderLeftColor=-1
+    layerBorderRightColor=-1
+    layerBorderTopColor=-1
+    layerBorderBottomColor=-1
+    addTextEditBoxHeight=60
+    addScriptEditBoxHeight=100
+    ```
+
+    </details>
 - [イージング選択](https://github.com/hebiiro/AviUtl-Plugin-SelectEasing)
   - `イージング選択 version 2.0.0`
 - [オブジェクトエクスプローラ](https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer)
