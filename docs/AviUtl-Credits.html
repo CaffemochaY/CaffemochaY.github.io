@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AviUtl-Credits</title>
+
+	<link rel="stylesheet" href="assets/github-markdown.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
+	<!-- <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
+</head>
+
+<body>
+	<script>
+		mermaid.initialize({
+			startOnLoad: true,
+			theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast') ?
+				'dark' :
+				'default'
+		});
+	</script>
+	<h1 id="aviutl-credits">AviUtl-Credits</h1>
+	<h2 id="%E6%9C%AC%E4%BD%93">本体</h2>
+	<ul>
+		<li><a href="http://spring-fragrance.mints.ne.jp/aviutl/">AviUtlのお部屋</a>
+			<ul>
+				<li><code>AviUtl ver.1.10</code></li>
+				<li><code>拡張編集 ver.0.92</code></li>
+			</ul>
+		</li>
+	</ul>
+	<h2 id="luajit">LuaJIT</h2>
+	<ul>
+		<li><a href="http://luajit.org/">LuaJIT</a>からDLしてビルドする</li>
+		<li>もしくはビルドしてくれている<a href="https://scrapbox.io/ePi5131/LuaJIT">ここ</a>からDL
+			<ul>
+				<li><code>LuaJIT-2.1.0-beta3</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<h2 id="plugins">plugins</h2>
+	<p>in-out</p>
+	<ul>
+		<li><a href="https://github.com/rigaya/x264guiEx">x264guiEx</a>
+			<ul>
+				<li><code>x264guiEx 3.05</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds">L-smash Works(Mr-Ojii版)</a>
+			<ul>
+				<li><code>L-smash Works Mr-Ojii r1086</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/rigaya/ffmpegOut">ffmpegOut</a>
+			<ul>
+				<li><code>ffmpegOut v1.00</code></li>
+				<li><a href="https://ffmpeg.org/">FFmpeg</a>
+					<ul>
+						<li><code>FFmpeg v5.0</code></li>
+					</ul>
+				</li>
+				<li><a href="https://scrapbox.io/Mr-Ojii/ffmpegOut_stg%E7%BD%AE%E3%81%8D%E5%A0%B4">ffmpegOut stg置き場</a></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<p>必須枠</p>
+	<ul>
+		<li><a href="https://github.com/ePi5131/patch.aul">patch.aul</a>
+			<ul>
+				<li>
+					<p><code>patch.aul r21</code></p>
+				</li>
+				<li>
+					<details>
+						<summary>json-setting</summary>
+						<pre class="hljs"><code><div>{
+  <span class="hljs-attr">"console"</span> : {
+    <span class="hljs-attr">"visible"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"rect"</span> : [ <span class="hljs-number">-8</span>, <span class="hljs-number">499</span>, <span class="hljs-number">1425</span>, <span class="hljs-number">1047</span> ]
+  },
+  <span class="hljs-attr">"theme_cc"</span> : {
+    <span class="hljs-attr">"layer"</span> : {
+      <span class="hljs-attr">"height_large"</span> : <span class="hljs-number">27</span>,
+      <span class="hljs-attr">"height_medium"</span> : <span class="hljs-number">23</span>,
+      <span class="hljs-attr">"height_small"</span> : <span class="hljs-number">19</span>,
+      <span class="hljs-attr">"link_col"</span> : <span class="hljs-string">"4040c0"</span>,
+      <span class="hljs-attr">"clipping_col"</span> : <span class="hljs-string">"c04040"</span>,
+      <span class="hljs-attr">"lock_col"</span> : [ <span class="hljs-string">"000000"</span>, <span class="hljs-string">"c04040"</span> ],
+      <span class="hljs-attr">"hide_alpha"</span> : <span class="hljs-number">0.850000</span>
+    },
+    <span class="hljs-attr">"object"</span> : {
+      <span class="hljs-attr">"media_col"</span> : [ <span class="hljs-string">"10206c"</span>, <span class="hljs-string">"1830c0"</span>, <span class="hljs-string">"4080ff"</span> ],
+      <span class="hljs-attr">"mfilter_col"</span> : [ <span class="hljs-string">"106c10"</span>, <span class="hljs-string">"18c018"</span>, <span class="hljs-string">"40f040"</span> ],
+      <span class="hljs-attr">"audio_col"</span> : [ <span class="hljs-string">"6c1018"</span>, <span class="hljs-string">"c01820"</span>, <span class="hljs-string">"f83040"</span> ],
+      <span class="hljs-attr">"afilter_col"</span> : [ <span class="hljs-string">"6c6c10"</span>, <span class="hljs-string">"c0c020"</span>, <span class="hljs-string">"d8d840"</span> ],
+      <span class="hljs-attr">"control_col"</span> : [ <span class="hljs-string">"106c6c"</span>, <span class="hljs-string">"18c0c0"</span>, <span class="hljs-string">"40d8d8"</span> ],
+      <span class="hljs-attr">"inactive_col"</span> : [ <span class="hljs-string">"606060"</span>, <span class="hljs-string">"808080"</span>, <span class="hljs-string">"909090"</span> ],
+      <span class="hljs-attr">"clipping_col"</span> : <span class="hljs-string">"c04040"</span>,
+      <span class="hljs-attr">"clipping_height"</span> : <span class="hljs-number">-3</span>,
+      <span class="hljs-attr">"midpt_size"</span> : [ <span class="hljs-number">4</span>, <span class="hljs-number">3</span>, <span class="hljs-number">3</span> ],
+      <span class="hljs-attr">"name_col"</span> : [ <span class="hljs-string">"ffffff"</span>, <span class="hljs-string">"a0a0a0"</span> ]
+    },
+    <span class="hljs-attr">"timeline"</span> : {
+      <span class="hljs-attr">"scale_col"</span> : [ <span class="hljs-string">"60a0ff"</span>, <span class="hljs-string">"204080"</span> ],
+      <span class="hljs-attr">"bpm_grid_col"</span> : [ <span class="hljs-string">"646464"</span>, <span class="hljs-string">"a0a0a0"</span> ]
+    }
+  },
+  <span class="hljs-attr">"switch"</span> : {
+    <span class="hljs-attr">"access_key"</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"exo_aviutl_filter"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"exo_track_minusval"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"exo_sceneidx"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"exo_trackparam"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"exo_specialcolorconv"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"text_op_size"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"ignore_media_param_reset"</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"theme_cc"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"exeditwindow_sizing"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"settingdialog_move"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"undo"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"undo.redo"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"undo.redo.shift"</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"console"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"console.escape"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"console.input"</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"console.debug_string"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"console.debug_string.time"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lua"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lua.env"</span> : <span class="hljs-literal">false</span>,
+    <span class="hljs-attr">"lua.rand"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lua.randex"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lua.getvalue"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"lua.path"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast.cl"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast.exeditwindow"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast.exeditwindow.step"</span> : <span class="hljs-number">0</span>,
+    <span class="hljs-attr">"fast.settingdialog"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast.radiationalblur"</span> : <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"fast.polortransform"</span> : <span class="hljs-literal">true</span>
+  }
+}
+</div></code></pre>
+					</details>
+				</li>
+			</ul>
+		</li>
+		<li><a href="https://www.nicovideo.jp/watch/sm35585310">InputPipePlugin</a>
+			<ul>
+				<li><code>InputPipePlugin v1.8</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://scrapbox.io/ePi5131/export2clipboard">export2clipboard</a>
+			<ul>
+				<li><code>export2clipboard</code></li>
+			</ul>
+		</li>
+		<li><a href="https://scrapbox.io/ePi5131/Auls%E3%83%A1%E3%83%A2%E3%83%AA%E5%8F%82%E7%85%A7%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3">Aulsメモリ参照プラグイン(1.10対応版)</a>
+			<ul>
+				<li><code>Aulsメモリ参照プラグイン</code></li>
+			</ul>
+		</li>
+		<li><a href="https://scrapbox.io/ePi5131/AulsPNG%E5%87%BA%E5%8A%9B_%E3%83%90%E3%82%B0%E4%BF%AE%E6%AD%A3">AulsPNG出力(修正版)</a>
+			<ul>
+				<li><code>AulsPNG出力 バグ修正</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://www.nicovideo.jp/watch/sm39258128">波形プレビュー</a>
+			<ul>
+				<li><code>WaveformPreview v0.3.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://scrapbox.io/karoterra/%E6%94%B9%E5%A4%89%E7%89%88Auls%E7%B5%82%E4%BA%86%E7%A2%BA%E8%AA%8D">改変版Auls終了確認</a>
+			<ul>
+				<li><code>改変版Auls終了確認 v1.2</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/karoterra/aviutl_ShowLimit">上限確認</a>
+			<ul>
+				<li><code>上限確認 v0.2.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://auls.client.jp/">ショートカット追加</a>
+			<ul>
+				<li><code>ショートカット追加</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-DragFilter">フィルタドラッグ移動</a>
+			<ul>
+				<li>
+					<p><code>フィルタドラッグ移動 v9.0.0</code></p>
+				</li>
+				<li>
+					<details>
+						<summary>ini-setting</summary>
+						<pre class="hljs"><code><div><span class="hljs-section">[TargetMark]</span>
+<span class="hljs-attr">alpha</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">penColor</span>=<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>
+<span class="hljs-attr">penWidth</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">brushColor</span>=<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>
+<span class="hljs-attr">base</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">width</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">fontName</span>=Segoe UI
+<span class="hljs-attr">fontSize</span>=<span class="hljs-number">32</span>
+<span class="hljs-attr">rotate</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">beginMoveX</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">beginMoveY</span>=<span class="hljs-number">0</span>
+</div></code></pre>
+					</details>
+				</li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont">お気に入りフォント選択</a>
+			<ul>
+				<li><code>お気に入りフォント選択 v5.2.1</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox">エディットボックス最適化</a>
+			<ul>
+				<li>
+					<p><code>エディットボックス最適化 version 7.1.1</code></p>
+				</li>
+				<li>
+					<details>
+						<summary>ini-setting</summary>
+						<pre class="hljs"><code><div><span class="hljs-section">[Settings]</span>
+<span class="hljs-attr">optimizeTimeLine</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">editBoxDelay</span>=<span class="hljs-number">250</span>
+<span class="hljs-attr">usesUnicodeInput</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">usesCtrlA</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">usesSetRedraw</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">usesGradientFill</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">innerColorR</span>=<span class="hljs-number">0</span>xff
+<span class="hljs-attr">innerColorG</span>=<span class="hljs-number">0</span>xff
+<span class="hljs-attr">innerColorB</span>=<span class="hljs-number">0</span>xff
+<span class="hljs-attr">innerEdgeWidth</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">innerEdgeHeight</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">outerColorR</span>=<span class="hljs-number">0</span>xf0
+<span class="hljs-attr">outerColorG</span>=<span class="hljs-number">0</span>x80
+<span class="hljs-attr">outerColorB</span>=<span class="hljs-number">0</span>x40
+<span class="hljs-attr">outerEdgeWidth</span>=<span class="hljs-number">1</span>
+<span class="hljs-attr">outerEdgeHeight</span>=<span class="hljs-number">0</span>
+<span class="hljs-attr">selectionColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">selectionEdgeColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">selectionBkColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">layerBorderLeftColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">layerBorderRightColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">layerBorderTopColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">layerBorderBottomColor</span>=-<span class="hljs-number">1</span>
+<span class="hljs-attr">addTextEditBoxHeight</span>=<span class="hljs-number">60</span>
+<span class="hljs-attr">addScriptEditBoxHeight</span>=<span class="hljs-number">100</span>
+</div></code></pre>
+					</details>
+				</li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-SelectEasing">イージング選択</a>
+			<ul>
+				<li><code>イージング選択 version 2.0.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer">オブジェクトエクスプローラ</a>
+			<ul>
+				<li><code>オブジェクトエクスプローラ version 2.0.1</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-CopyFilter">フィルタのコピペ</a>
+			<ul>
+				<li><code>フィルタのコピペ 1.0.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://www.nicovideo.jp/watch/sm36085428">設定ダイアログ画面サイズ固定化</a>
+			<ul>
+				<li><code>設定ダイアログ画面サイズ固定化 v2.6</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://aoytsk.blog.jp/aviutl/1644995.html">拡張ツールバー</a>
+			<ul>
+				<li><code>拡張ツールバー v0.3.6</code></li>
+			</ul>
+		</li>
+		<li><a href="https://aoytsk.blog.jp/aviutl/1470428.html">ウィンドウマネージャー</a>
+			<ul>
+				<li><code>ウィンドウマネージャー v0.4.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://aoytsk.blog.jp/aviutl/613302.html">シークバー＋</a>
+			<ul>
+				<li><code>シークバー＋ v0.3.1</code></li>
+			</ul>
+		</li>
+		<li><a href="https://aoytsk.blog.jp/aviutl/1769130.html">シーン切替</a>
+			<ul>
+				<li><code>シーン切替 v0.2.0b</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://www.nicovideo.jp/watch/sm39776727">真・グループ制御</a>
+			<ul>
+				<li><code>真・グループ制御 v1.1.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/kumrnm/aviutl-easing-quick-setup">イージング設定時短</a>
+			<ul>
+				<li><code>easing_quick_setup v1.0.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/kumrnm/aviutl-advanced-mouse-operation">マウスオペレーション改</a>
+			<ul>
+				<li><code>マウスオペレーション改 v1.0.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://www.nicovideo.jp/watch/sm39701988">カメラ補助</a>
+			<ul>
+				<li><code>カメラ補助プラグイン v1.7</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://github.com/oov/aviutl_psdtoolkit">PSDToolKit</a>
+			<ul>
+				<li><code>PSDToolKit v0.2beta56</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/oov/aviutl_gcmzdrops">ごちゃまぜドロップス</a>
+			<ul>
+				<li><code>ごちゃまぜドロップス v0.4.0beta4</code></li>
+				<li>(PSDToolKitの中に入っているファイルを上書き)</li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/oov/aviutl_rampreview">拡張編集RAMプレビュー</a>
+			<ul>
+				<li><code>拡張編集RAMプレビュー v0.3rc7</code></li>
+				<li>(PSDToolKitの中に入っているファイルを上書き)</li>
+			</ul>
+		</li>
+		<li><a href="https://www.nicovideo.jp/watch/sm34877728">音量測定用プラグイン</a>
+			<ul>
+				<li><code>loudness v0.1</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/oov/aviutl_textassist">テキスト編集補助</a>
+			<ul>
+				<li><code>テキスト編集補助 v0.3.4</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/oov/aviutl_browser">aviutl_browser</a>
+			<ul>
+				<li><code>aviutl_browser v0.4.1</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/oov/aviutl_bridge">bridge.dll</a>
+			<ul>
+				<li><code>bridge.dll v0.14.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://hazumurhythm.com/a/a2Z/">rikky module&amp;memory</a>
+			<ul>
+				<li><code>rikky_module v1.4b</code></li>
+				<li><code>rikky_memory v0.6a</code></li>
+			</ul>
+		</li>
+		<li><a href="https://hazumurhythm.com/a/Y3c/">カラーパレット</a>
+			<ul>
+				<li><code>カラーパレット v2.1+</code></li>
+				<li><a href="https://renhagu.net/downloads/">ユニバーサルデザイン推奨配色セット</a></li>
+			</ul>
+		</li>
+		<li><a href="https://hazumurhythm.com/a/3Av/">相対パス保存</a>
+			<ul>
+				<li><code>relative v0.9e</code></li>
+			</ul>
+		</li>
+		<li><a href="https://hazumurhythm.com/a/G8o/">オブジェクト名変更</a>
+			<ul>
+				<li><code>オブジェクト名変更</code></li>
+			</ul>
+		</li>
+		<li><a href="https://hazumurhythm.com/a/Di0/">スクリプト並べ替え管理</a>
+			<ul>
+				<li><code>スクリプト並べ替え管理 v2</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="http://auf.jpn.xxxxxxxx.jp/">JPEG 3点セット</a>
+			<ul>
+				<li><code>JPEG 3点セット v0.3.1</code></li>
+			</ul>
+		</li>
+		<li><a href="http://auf.jpn.xxxxxxxx.jp/">虫眼鏡プラグイン</a>
+			<ul>
+				<li><code>虫眼鏡プラグイン r8</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://www.nicovideo.jp/watch/sm29926034">VSTホストプラグイン</a>
+			<ul>
+				<li><code>VSTホストプラグイン v0.1</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://aji0.web.fc2.com/">色調補正・改</a>
+			<ul>
+				<li><code>色調補正・改 v2.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<ul>
+		<li><a href="https://github.com/Mr-Ojii/MotionTracking_MKII_Plus">MotionTracking_MKII_Plus</a>
+			<ul>
+				<li><code>MotionTracking_MKII_Plus r40</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<h2 id="iniedit">ini_edit</h2>
+	<ul>
+		<li><a href="https://github.com/hebiiro/AviUtl-Tool-aviutl.ini.gui">aviutl.ini 編集</a>
+			<ul>
+				<li><code>aviutl.ini 編集 v1.0.0</code></li>
+			</ul>
+		</li>
+		<li><a href="https://github.com/hebiiro/AviUtl-Tool-patch.aul.json.gui">patch.aul.json 編集</a>
+			<ul>
+				<li><code>patch.aul.json 編集 v16.0.0</code></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<h2 id="scripts">scripts</h2>
+	<ul>
+		<li>
+			<p><a href="https://github.com/Aodaruma">Aodaruma</a></p>
+			<ul>
+				<li>3DObject</li>
+				<li>CameraDisplays</li>
+				<li>ClipFigures</li>
+				<li>CycleAffect</li>
+				<li>DelayBuffer</li>
+				<li>FlatShadow</li>
+				<li>kerning</li>
+				<li>light&amp;shadow</li>
+				<li>LoopTextures</li>
+				<li>MaskingSlider</li>
+				<li>Modulator</li>
+				<li>OriginalToon</li>
+				<li>ParallelCamera</li>
+				<li>Partition&amp;Flex</li>
+				<li>Repeater</li>
+				<li>RepeatingClip</li>
+				<li>RikkyReflection</li>
+				<li>SphereMaterialTest</li>
+				<li>Trackers</li>
+				<li>UVmapping(beta)</li>
+				<li>VariableTrack</li>
+				<li>WipeClipping</li>
+				<li>キャッシュ保存RM</li>
+				<li>グラデーションマップ(Re)
+					<ul>
+						<li><a href="https://www.nicovideo.jp/watch/sm30253109">グラデーションマッププリセット</a></li>
+						<li><a href="https://twitter.com/rezile_ExThin/status/1181524102693081088">Lejeグラデーションマップセット</a></li>
+					</ul>
+				</li>
+				<li>簡易Glitch++(派生)</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://auls.client.jp/">Auls</a></p>
+			<ul>
+				<li>Aulsアニメーション効果</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/97204971">button</a></p>
+			<ul>
+				<li>BPM同期</li>
+				<li>音量変化</li>
+				<li>画像表示</li>
+				<li>縦横比</li>
+				<li>中心座標移動B</li>
+				<li>髪飾り反転</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/95423040">CaffemochaY</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm40105334">ソフトフォーカス</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm40105334">グラデーション縁取り＋</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm40317056">ディフュージョン</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm40317056">コントラスト比自動計算</a></li>
+				<li><a href="https://twitter.com/CaffemochaY/status/1524698397952909312">任意番号個別エフェクト</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://scrapbox.io/ePi5131/">ePi</a></p>
+			<ul>
+				<li><a href="https://scrapbox.io/ePi5131/ease">ease</a></li>
+				<li><a href="https://scrapbox.io/ePi5131/koma.anm">koma</a></li>
+				<li><a href="https://scrapbox.io/ePi5131/AviUtl_%E4%BB%BB%E6%84%8F%E3%81%AE%E8%A7%92%E5%BA%A6%E3%81%8C%E3%81%A4%E3%81%84%E3%81%9F%E6%96%9C%E4%BD%93%E3%82%92%E4%BD%9C%E3%82%8D%E3%81%86">斜</a></li>
+				<li><a href="https://scrapbox.io/ePi5131/%E6%B1%8E%E7%94%A8%E3%83%88%E3%83%A9%E3%83%83%E3%82%AF%E3%83%90%E3%83%BC">汎用トラックバー</a></li>
+				<li><a href="https://scrapbox.io/ePi5131/aulut">aulut</a>
+					<ul>
+						<li><a href="https://www.rocketstock.com/free-after-effects-templates/35-free-luts-for-color-grading-videos/">35 Free LUTs for Color Grading Videos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/4739587">gometh</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm30220788">ドカベンスクリプト</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm32069730">グラフ描画</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34892254">音MAD五線譜</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34953829">タイムラインオブジェクト</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34953916">蜘蛛の巣</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34953926">電光掲示板</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34953935">クリッピングして登場</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34953940">角丸ライン</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37269786">満ち欠け円</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37269815">非弾性衝突</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37269841">任意軸回転</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37635423">パチンコ風文字</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38077066">角丸正多角形</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38454622">ひらがな小さ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38565819">ハーフトーン</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39006767">ベベルとエンボス</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39560082">漫画化エフェクト</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://twitter.com/i/events/950334056461344768">kaisatsu</a></p>
+			<ul>
+				<li><a href="https://twitter.com/kai_satsu/status/933298940987846656">減衰振動</a></li>
+				<li><a href="https://twitter.com/kai_satsu/status/906772065813803009">スケールワイプ</a></li>
+				<li><a href="https://twitter.com/kai_satsu/status/874996715496984577">なめらか縁取り</a></li>
+				<li><a href="https://twitter.com/kai_satsu/status/874996715496984577">光彩</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/60922888">jaguyama</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm37599083">エフェクト準備</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/17745173">Karoterra</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm38463837">3次ベジェ曲線イージング</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38752367">動く多角形</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39711773">曲げKR</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38814110">MarkdownEX</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39051118">油絵</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://twitter.com/Legendtomo_">Legendtomo</a></p>
+			<ul>
+				<li><a href="https://twitter.com/Legendtomo_/status/1061908978576195584">rounded_circle</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://madeinpc.blog.fc2.com/">madeinpc</a></p>
+			<ul>
+				<li><a href="https://madeinpc.blog.fc2.com/blog-entry-1146.html">トーンカーブRGB改</a></li>
+				<li><a href="https://madeinpc.blog.fc2.com/blog-entry-1148.html">トーンカーブHSV改</a></li>
+				<li><a href="https://madeinpc.blog.fc2.com/blog-entry-1311.html">RGB順序入れ替え(DLL)</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/117083491">mina</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm39488375">雑縁取り</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39316703">中間点毎に表示(個別)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39170222">FlatShadow_V</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38516538">BPM同期効果処理</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://github.com/Mr-Ojii">Mr-Ojii</a></p>
+			<ul>
+				<li><a href="https://github.com/Mr-Ojii/ImageLoader_M">ImageLoader_M</a></li>
+				<li><a href="https://github.com/Mr-Ojii/Bevel_And_Emboss_M">Bevel_And_Emboss_M</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/188248">Respectrum93</a></p>
+			<ul>
+				<li>DelayMove (<a href="https://scrapbox.io/ePi5131/LuaJIT">修正参考</a>)</li>
+				<li>DelayDraw</li>
+				<li>MultiSlicer</li>
+				<li>ベジエ軌道Ｔ+</li>
+				<li>マルチベジェ軌道</li>
+				<li>偽被写界深度2</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/14059878">rikky</a></p>
+			<ul>
+				<li><a href="https://hazumurhythm.com/a/3Os/">扇クリッピングR</a></li>
+				<li><a href="https://hazumurhythm.com/a/1Sm/">立体化(R)</a></li>
+				<li><a href="https://hazumurhythm.com/a/2Nr/">カメラ手ぶれ(R)</a></li>
+				<li><a href="https://hazumurhythm.com/a/w2C/">合成モード拡張</a></li>
+				<li><a href="https://hazumurhythm.com/a/pA2/">パーツ分割</a></li>
+				<li><a href="https://hazumurhythm.com/a/4sI/">タイピング</a></li>
+				<li><a href="https://hazumurhythm.com/a/1Ga/">グループアニメーションGA</a></li>
+				<li><a href="https://hazumurhythm.com/a/62Nf/">カケアミ</a></li>
+				<li><a href="https://hazumurhythm.com/a/5fYN/">乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまったED風</a></li>
+				<li><a href="https://hazumurhythm.com/a/Ba6/">パーティクル(R)</a>
+					<ul>
+						<li><a href="https://hazumurhythm.com/a/Te1/">パーティクル(R)カスタムオブジェクト</a></li>
+					</ul>
+				</li>
+				<li><a href="https://hazumurhythm.com/a/5Yb/">グラデーション(R)</a></li>
+				<li><a href="https://hazumurhythm.com/a/E1g/">シーンチェンジアニメ</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://github.com/SEED264">SEED264</a></p>
+			<ul>
+				<li><a href="https://github.com/SEED264/PixelSorter_s">PixelSorter_s</a></li>
+				<li><a href="https://github.com/SEED264/RadialWipe_s">RadialWipe_s</a></li>
+				<li><a href="https://github.com/SEED264/OpticsCompensation_s">OpticsCompensation_s</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/1366031">tim</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm38701215">ライン抽出T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17476172">カスタムフレア</a>
+					<ul>
+						<li><a href="https://www.nicovideo.jp/watch/sm21519868">カスタムフレア・プリセット+</a></li>
+					</ul>
+				</li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38361197">ひび割れガラスT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38304163">罫線T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37665554">低解像度T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37665519">注ぎT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm36355165">ジグザグ塗りT</a></li>
+				<li><a href="https://timnoheya.fc2.net/blog-entry-10.html">バーコードT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm35722623">色調調整セットver6</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34225787">カメレオン効果</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm33598259">縁取りT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm33598240">ブロックラスターT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm30453564">ぷよぷよT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm30453526">網点分解T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm26938922">集中線T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm22974710">マルチラインT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm22528296">リール回転T</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm21864731">風揺れT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm21475670">ストロークT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm21060861">twitchっぽいものT</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20946264">ライントーン＆ハーフトーン</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20763137">ラフエッジ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20729870">透明度指定</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20729858">モーションタイル</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20632293">ベジエ曲線による軌道調整</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20550446">フィルターセット</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20426178">透明塗り</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20358620">簡易モーフィング</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20237800">色抽出</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20042712">燃焼</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20001035">ワイヤー3D</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19924144">TrackingラインEasy</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19868761">オーラ放出</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19788901">シーンチェンジセット</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19745635">スターバースト</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm30452741">砕け散るパズル</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19465675">スカイドーム</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19425542">虹色グラデーション</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19417956">色収差</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19322302">領域枠</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19110075">二十六面体</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19109766">放射分布 変色パーティクル</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18731596">曲面変形</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18731552">な～さりい☆らいむ風TA</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18581114">輝度ワイプ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18581033">グリッドワイプ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18580953">ツイスター</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18348885">色付きエッジ抽出</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18114436">つまむ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17999314">インク（＋ひょうたん）</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17935960">スプリット</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17848725">蜂の巣モザイク</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm14441618">はためき</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16555929">オートターゲット</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm31700000">回転ブラー</a></li>
+				<li><a href="https://timnoheya.fc2.net/blog-entry-8.html">バニシングポイント</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm20483016">多角錐変形</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19322190">簡易リピーター</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm19322218">簡易ワープ(改)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm18259978">輪郭追跡</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17765571">正多面体</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17348356">ランダムブラー</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17192955">フィルム焦げ</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17156271">ゆらめき</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17155254">斜めブラインド(改)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm17154269">極座標変換＋ぼかしミラー</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16943422">小物(カメラデータコピー等)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16931205">稲妻</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16763314">砕けたガラス</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16630776">MMDカメラデータ読込</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16497408">ライトバースト</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16461298">バニシングポイント2</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16326102">任意多角形カット</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16109364">任意多角形カスタムオブジェクト</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm16108745">泡</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15784672">一時保存読込</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15604220">多色グラデーション</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15498968">砕け散る球</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15248261">エンボスタイル</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15221902">砕け散る(改)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm15039124">簡易モーションパス(パス数無制限版)</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm14632269">歯車変形</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm14573964">直方体展開</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm14573891">ルービックキューブ配置</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm14199347">レンズフレア</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/26576669">UndoFish/あんどぅ</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm37721332">トラックバー対応イージングスクリプト 2020版</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm21828818">文字輪郭追跡</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://bowlroll.net/file/3777">さつき</a></p>
+		</li>
+		<li>
+			<p><a href="https://shummg.work/downloads">しゅう</a></p>
+			<ul>
+				<li>BufferMask</li>
+				<li>SquareAdvanced</li>
+				<li>モザイクとノイズ</li>
+				<li>明度着色</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/16086289">スノスク</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm37678490">拡大縮小ランダム配置</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/14280641">ちくぼん</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm38380577">直線</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm38605865">割合斜めクリッピング</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/92595139">ちはユキ</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm37438844">自動呼吸アニメーション</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm37066079">補助線スクリプト</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/621156">はち</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm32870150">中心座標移動</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/2358792">てつ(XIAO)</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm32520048">OpenCV_anm</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/29980050">プリンカ</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm26857840">本当のブロックノイズ</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://twitter.com/matatabi1120">マタタビ</a></p>
+			<ul>
+				<li><a href="https://bowlroll.net/file/230162">Fractal</a></li>
+				<li><a href="https://bowlroll.net/file/253069">PatternCollection</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://twitter.com/moll_movie">もる</a></p>
+			<ul>
+				<li><a href="https://twitter.com/moll_movie/status/1508386616544403464">簡易色変更</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://twitter.com/i/events/1316391623589130241">ゆーひま</a></p>
+			<ul>
+				<li><a href="https://twitter.com/YuHima_03/status/1343483111019974656">内側縁取り</a></li>
+				<li><a href="https://twitter.com/YuHima_03/status/1343460865224237056">内側シャドー</a></li>
+				<li><a href="https://twitter.com/YuHima_03/status/1298226973630533632">ずらし縁取り</a></li>
+				<li><a href="https://twitter.com/YuHima_03/status/1290932841824493569">角丸四角形plus</a></li>
+				<li><a href="https://twitter.com/YuHima_03/status/1264558442934460418">簡易テキスト背景</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/46794622">ゆゆ</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm40029878">Blessing風TA</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm40029878">XYランダム</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm40029878">縦書き中央寄せ</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/16350045">高橋 直哉</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm35637238">アスキーアート化</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm39554686">ドット絵化</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/48182904">糖衣月餅</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm37189836">明度・コントラスト補正+</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/453050">白い豚(赤)</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm34885270">動く曲線_FrontLine</a></li>
+				<li><a href="https://www.nicovideo.jp/watch/sm34925665">レイヤーミラー</a></li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://purinka.work/download/hksy.html">白水</a></p>
+			<ul>
+				<li>@hksy</li>
+				<li>DLL使用アニメーション効果</li>
+				<li>MIDIFileReader</li>
+			</ul>
+		</li>
+		<li>
+			<p><a href="https://www.nicovideo.jp/user/16151608">微熱</a></p>
+			<ul>
+				<li><a href="https://www.nicovideo.jp/watch/sm29797191">塗りつぶしクロマキー</a></li>
+			</ul>
+		</li>
+	</ul>
+	<hr>
+	<h2 id="transition">Transition</h2>
+	<ul>
+		<li><a href="https://nega.client.jp/">MORGUE</a></li>
+		<li><a href="https://krkrz.github.io/">吉里吉里Z</a></li>
+		<li><a href="http://jym.if.land.to/game/trans/index.html">256じゃんくヤードMELT!</a></li>
+	</ul>
+	<hr>
+	<h2 id="other-tools">Other-Tools</h2>
+	<ul>
+		<li><a href="https://share-aup.com/download/aup_exp_tool">.aupExportTool</a></li>
+		<li><a href="https://github.com/karoterra/AupInfo">AupInfo</a></li>
+	</ul>
+
+</body>
+
+</html>
