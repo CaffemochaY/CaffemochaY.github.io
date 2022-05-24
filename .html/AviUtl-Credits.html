@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/github-markdown-light.css">
 	<title>AviUtl-Credits</title>
 
-	<link rel="stylesheet" href="assets/github-markdown-light.css">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css">
-	<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script> -->
 	<style>
 		body {
-			margin : 1em 25%;
+			margin: 5em 25%;
 		}
 	</style>
 </head>
 
-<body>
+<body class="markdown-body">
 	<h1 id="aviutl-credits">AviUtl-Credits</h1>
 	<h2 id="%E6%9C%AC%E4%BD%93">本体</h2>
 	<ul>
@@ -224,7 +223,180 @@
 		</li>
 		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont">お気に入りフォント選択</a>
 			<ul>
-				<li><code>お気に入りフォント選択 v5.2.1</code></li>
+				<li>
+					<p><code>お気に入りフォント選択 v5.2.1</code></p>
+				</li>
+				<li>
+					<details>
+						<summary>xml-setting</summary>
+						<pre class="hljs"><code><div><span class="hljs-meta">&lt;?xml version="1.0" encoding="UTF-16" standalone="no"?&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">settings</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">setting</span> <span class="hljs-attr">x</span>=<span class="hljs-string">"2753"</span> <span class="hljs-attr">y</span>=<span class="hljs-string">"191"</span> <span class="hljs-attr">w</span>=<span class="hljs-string">"295"</span> <span class="hljs-attr">h</span>=<span class="hljs-string">"499"</span> <span class="hljs-attr">labelFormat</span>=<span class="hljs-string">"%ws --- %ws"</span> <span class="hljs-attr">separatorFormat</span>=<span class="hljs-string">"----------"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">preview</span> <span class="hljs-attr">enable</span>=<span class="hljs-string">"YES"</span> <span class="hljs-attr">left</span>=<span class="hljs-string">"YES"</span> <span class="hljs-attr">itemWidth</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">itemHeight</span>=<span class="hljs-string">"20"</span> <span class="hljs-attr">textFormat</span>=<span class="hljs-string">"Sample(%s)"</span> <span class="hljs-attr">fillColor</span>=<span class="hljs-string">"#ffffff"</span> <span class="hljs-attr">textColor</span>=<span class="hljs-string">"#000000"</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">favorite</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"よく使うフォント"</span> <span class="hljs-attr">expand</span>=<span class="hljs-string">"YES"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"けいふぉんと"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ラノベPOP v2"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Klee One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"チョーク体"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Stick"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"チョークS"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Reggae One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ロックンロール One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"クラフト明朝"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ぽーら H"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"こまどり mini"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"851チカラヅヨク-かなA"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"851チカラヨワク"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"Zen"</span> <span class="hljs-attr">expand</span>=<span class="hljs-string">"YES"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Antique"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Antique Soft"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Old Mincho"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Old Mincho Black"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"ゴシック体"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"けいふぉんと"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ラノベPOP v2"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"モボ"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"モッチーポップ One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"モッチーポップ P One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"零ゴシック"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"なごみ極細ゴシック ExtraLight"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"Zen Kaku Gothic New"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Kaku Gothic New Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"游ゴシック"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游ゴシック"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游ゴシック Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游ゴシック Medium"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"源ノ角ゴシック"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP EL"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP L"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP N"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP R"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP M"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"源ノ角ゴシック Code JP H"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"マメロン"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"マメロン 3 Hi Regular"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"マメロン 3.5 Hi Regular"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"マメロン 4 Hi Regular"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"マメロン 5 Hi Regular"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"コーポレート・ロゴ"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"コーポレート・ロゴ ver2 Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"コーポレート・ロゴ ver2"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"Mplus 1p"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p Thin"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p Bold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p ExtraBold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Mplus 1p Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"明朝体"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Antique"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Antique Soft"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Old Mincho"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Zen Old Mincho Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ほのか明朝"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ほのか新明朝 Light"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"装甲明朝"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"馬酔木明朝 Light"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"はれのそら明朝"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"游明朝"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游明朝"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游明朝 Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"游明朝 DemiBold"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"しっぽり明朝"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝 Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝 SemiBold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝 ExtraBold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝B1"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝B1 Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝B1 SemiBold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しっぽり明朝B1 ExtraBold"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"錦明朝かな"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"錦明朝かな"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"錦明朝かな Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"錦明朝かな Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"錦明朝かな SemiBold"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"夜永オールド明朝"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"夜永オールド明朝 Regular"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"夜永オールド明朝 Bold"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"夜永オールド明朝 Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"特殊"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Klee One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"チョーク体"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Stick"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"チョークS"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Reggae One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ロックンロール One"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"クラフト明朝"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ぽーら H"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"しあさって"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"こまどり mini"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"かなりあmini mini"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"やわらかドラゴン mini mini"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"851チカラヅヨク-かなA"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"異世明"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"異世ゴ"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"トガリテ"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ Thin"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ Light"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ Medium"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ Heavy"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"トガリテ Black"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"JKゴシック"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"JKゴシックL"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"JKゴシックM"</span>/&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"JK丸ゴシック Medium"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"英文フォント"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Challenge Shadow"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"CounselorScript"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Vaderlands"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Script"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">alias</span>=<span class="hljs-string">"手書き"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"Yomogi"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"あずきフォント"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"あずきフォントP"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"あんずもじ"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"あんずもじ等幅"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"うずらフォント"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"ちはや純"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"アイシングソーダ"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"アイシングソーダ濃"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"花鳥風月"</span>/&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">font</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"春夏秋冬Ⅱ"</span>/&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">font</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">favorite</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+</div></code></pre>
+					</details>
+				</li>
 			</ul>
 		</li>
 		<li><a href="https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox">エディットボックス最適化</a>
@@ -286,7 +458,24 @@
 	<ul>
 		<li><a href="https://www.nicovideo.jp/watch/sm36085428">設定ダイアログ画面サイズ固定化</a>
 			<ul>
-				<li><code>設定ダイアログ画面サイズ固定化 v2.6</code></li>
+				<li>
+					<p><code>設定ダイアログ画面サイズ固定化 v2.6</code></p>
+				</li>
+				<li>
+					<details>
+						<summary>ini-setting</summary>
+						<pre class="hljs"><code><div><span class="hljs-section">[Config]</span>
+<span class="hljs-attr">cyScrollLine</span>=<span class="hljs-number">60</span>
+<span class="hljs-attr">cyMargin</span>=<span class="hljs-number">120</span>
+<span class="hljs-attr">bAlwaysRestoreScrollPos</span>=<span class="hljs-literal">false</span>
+<span class="hljs-section">[Window]</span>
+<span class="hljs-attr">top</span>=-<span class="hljs-number">2</span>
+<span class="hljs-attr">left</span>=<span class="hljs-number">1912</span>
+<span class="hljs-attr">right</span>=<span class="hljs-number">2429</span>
+<span class="hljs-attr">bottom</span>=<span class="hljs-number">1049</span>
+</div></code></pre>
+					</details>
+				</li>
 			</ul>
 		</li>
 	</ul>
