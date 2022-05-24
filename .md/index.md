@@ -1,3 +1,3 @@
 # index.md
 
-[AviUtl-Credits](docs/AviUtl-Credits.html)
+[AviUtl-Credits](AviUtl-Credits.md)

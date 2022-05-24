@@ -157,6 +157,177 @@ in-out
     </details>
 - [お気に入りフォント選択](https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont)
   - `お気に入りフォント選択 v5.2.1`
+  - <details><summary>xml-setting</summary>
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-16" standalone="no"?>
+      <settings>
+        <setting x="2753" y="191" w="295" h="499" labelFormat="%ws --- %ws" separatorFormat="----------"/>
+        <preview enable="YES" left="YES" itemWidth="400" itemHeight="20" textFormat="Sample(%s)" fillColor="#ffffff" textColor="#000000"/>
+        <favorite>
+          <font alias="よく使うフォント" expand="YES">
+            <font name="けいふぉんと"/>
+            <font name="ラノベPOP v2"/>
+            <font name="Klee One"/>
+            <font name="チョーク体"/>
+            <font name="Stick"/>
+            <font name="チョークS"/>
+            <font name="Reggae One"/>
+            <font name="ロックンロール One"/>
+            <font name="クラフト明朝"/>
+            <font name="ぽーら H"/>
+            <font name="こまどり mini"/>
+            <font name="851チカラヅヨク-かなA"/>
+            <font name="851チカラヨワク"/>
+            <font alias="Zen" expand="YES">
+              <font name="Zen Antique"/>
+              <font name="Zen Antique Soft"/>
+              <font name="Zen Old Mincho"/>
+              <font name="Zen Old Mincho Black"/>
+              <font name="Zen Kaku Gothic New Light"/>
+              <font name="Zen Kaku Gothic New"/>
+              <font name="Zen Kaku Gothic New Medium"/>
+              <font name="Zen Kaku Gothic New Black"/>
+            </font>
+          </font>
+          <font alias="ゴシック体">
+            <font name="けいふぉんと"/>
+            <font name="ラノベPOP v2"/>
+            <font name="モボ"/>
+            <font name="モッチーポップ One"/>
+            <font name="モッチーポップ P One"/>
+            <font name="零ゴシック"/>
+            <font name="なごみ極細ゴシック ExtraLight"/>
+            <font alias="Zen Kaku Gothic New">
+              <font name="Zen Kaku Gothic New Light"/>
+              <font name="Zen Kaku Gothic New"/>
+              <font name="Zen Kaku Gothic New Medium"/>
+              <font name="Zen Kaku Gothic New Black"/>
+            </font>
+            <font alias="游ゴシック">
+              <font name="游ゴシック"/>
+              <font name="游ゴシック Light"/>
+              <font name="游ゴシック Medium"/>
+            </font>
+            <font alias="源ノ角ゴシック">
+              <font name="源ノ角ゴシック Code JP EL"/>
+              <font name="源ノ角ゴシック Code JP L"/>
+              <font name="源ノ角ゴシック Code JP N"/>
+              <font name="源ノ角ゴシック Code JP R"/>
+              <font name="源ノ角ゴシック Code JP M"/>
+              <font name="源ノ角ゴシック Code JP H"/>
+            </font>
+            <font alias="マメロン">
+              <font name="マメロン 3 Hi Regular"/>
+              <font name="マメロン 3.5 Hi Regular"/>
+              <font name="マメロン 4 Hi Regular"/>
+              <font name="マメロン 5 Hi Regular"/>
+            </font>
+            <font alias="コーポレート・ロゴ">
+              <font name="コーポレート・ロゴ ver2 Medium"/>
+              <font name="コーポレート・ロゴ ver2"/>
+            </font>
+            <font alias="Mplus 1p">
+              <font name="Mplus 1p Thin"/>
+              <font name="Mplus 1p Light"/>
+              <font name="Mplus 1p"/>
+              <font name="Mplus 1p Medium"/>
+              <font name="Mplus 1p Bold"/>
+              <font name="Mplus 1p ExtraBold"/>
+              <font name="Mplus 1p Black"/>
+            </font>
+          </font>
+          <font alias="明朝体">
+            <font name="Zen Antique"/>
+            <font name="Zen Antique Soft"/>
+            <font name="Zen Old Mincho"/>
+            <font name="Zen Old Mincho Black"/>
+            <font name="ほのか明朝"/>
+            <font name="ほのか新明朝 Light"/>
+            <font name="装甲明朝"/>
+            <font name="馬酔木明朝 Light"/>
+            <font name="はれのそら明朝"/>
+            <font alias="游明朝">
+              <font name="游明朝"/>
+              <font name="游明朝 Light"/>
+              <font name="游明朝 DemiBold"/>
+            </font>
+            <font alias="しっぽり明朝">
+              <font name="しっぽり明朝"/>
+              <font name="しっぽり明朝 Medium"/>
+              <font name="しっぽり明朝 SemiBold"/>
+              <font name="しっぽり明朝 ExtraBold"/>
+              <font name="しっぽり明朝B1"/>
+              <font name="しっぽり明朝B1 Medium"/>
+              <font name="しっぽり明朝B1 SemiBold"/>
+              <font name="しっぽり明朝B1 ExtraBold"/>
+            </font>
+            <font alias="錦明朝かな">
+              <font name="錦明朝かな"/>
+              <font name="錦明朝かな Light"/>
+              <font name="錦明朝かな Medium"/>
+              <font name="錦明朝かな SemiBold"/>
+            </font>
+            <font alias="夜永オールド明朝">
+              <font name="夜永オールド明朝 Regular"/>
+              <font name="夜永オールド明朝 Bold"/>
+              <font name="夜永オールド明朝 Black"/>
+            </font>
+          </font>
+          <font alias="特殊">
+            <font name="Klee One"/>
+            <font name="チョーク体"/>
+            <font name="Stick"/>
+            <font name="チョークS"/>
+            <font name="Reggae One"/>
+            <font name="ロックンロール One"/>
+            <font name="クラフト明朝"/>
+            <font name="ぽーら H"/>
+            <font name="しあさって"/>
+            <font name="こまどり mini"/>
+            <font name="かなりあmini mini"/>
+            <font name="やわらかドラゴン mini mini"/>
+            <font name="851チカラヅヨク-かなA"/>
+            <font name="異世明"/>
+            <font name="異世ゴ"/>
+            <font alias="トガリテ">
+              <font name="トガリテ"/>
+              <font name="トガリテ Thin"/>
+              <font name="トガリテ Light"/>
+              <font name="トガリテ Medium"/>
+              <font name="トガリテ Heavy"/>
+              <font name="トガリテ Black"/>
+            </font>
+            <font alias="JKゴシック">
+              <font name="JKゴシックL"/>
+              <font name="JKゴシックM"/>
+              <font name="JK丸ゴシック Medium"/>
+            </font>
+          </font>
+          <font alias="英文フォント">
+            <font name="Challenge Shadow"/>
+            <font name="CounselorScript"/>
+            <font name="Vaderlands"/>
+            <font name="Script"/>
+          </font>
+          <font alias="手書き">
+            <font name="Yomogi"/>
+            <font name="あずきフォント"/>
+            <font name="あずきフォントP"/>
+            <font name="あんずもじ"/>
+            <font name="あんずもじ等幅"/>
+            <font name="うずらフォント"/>
+            <font name="ちはや純"/>
+            <font name="アイシングソーダ"/>
+            <font name="アイシングソーダ濃"/>
+            <font name="花鳥風月"/>
+            <font name="春夏秋冬Ⅱ"/>
+          </font>
+        </favorite>
+      </settings>
+    ```
+
+    </details>
 - [エディットボックス最適化](https://github.com/hebiiro/AviUtl-Plugin-OptimizeEditBox)
   - `エディットボックス最適化 version 7.1.1`
   - <details><summary>ini-setting</summary>
@@ -202,6 +373,21 @@ in-out
 
 - [設定ダイアログ画面サイズ固定化](https://www.nicovideo.jp/watch/sm36085428)
   - `設定ダイアログ画面サイズ固定化 v2.6`
+  - <details><summary>ini-setting</summary>
+
+    ```ini
+    [Config]
+    cyScrollLine=60
+    cyMargin=120
+    bAlwaysRestoreScrollPos=false
+    [Window]
+    top=-2
+    left=1912
+    right=2429
+    bottom=1049
+    ```
+
+    </details>
 
 ---
 
