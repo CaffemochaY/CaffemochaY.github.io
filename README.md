@@ -2,6 +2,13 @@
 
 github-pages用のレポジトリ
 
+markdownで書いたファイルが [.md](.md) フォルダにあるので、書き終わるまではそっちを見て
+
+## License
+
+MIT License  
+[LICENSE](LICENSE)
+
 ## Credit
 
 ### github-markdown-css

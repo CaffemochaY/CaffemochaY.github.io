@@ -192,7 +192,7 @@ in-out
 
     </details>
 - [イージング選択](https://github.com/hebiiro/AviUtl-Plugin-SelectEasing)
-  - `イージング選択 version 2.0.0`
+  - `イージング選択 version 4.2.0`
 - [オブジェクトエクスプローラ](https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer)
   - `オブジェクトエクスプローラ version 2.0.1`
 - [フィルタのコピペ](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter)
