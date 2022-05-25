@@ -365,7 +365,7 @@ in-out
 - [イージング選択](https://github.com/hebiiro/AviUtl-Plugin-SelectEasing)
   - `イージング選択 version 4.2.0`
 - [オブジェクトエクスプローラ](https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer)
-  - `オブジェクトエクスプローラ version 2.0.1`
+  - `オブジェクトエクスプローラ version 2.0.2`
 - [フィルタのコピペ](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter)
   - `フィルタのコピペ 1.0.0`
 
@@ -776,6 +776,9 @@ in-out
 
 - [微熱](https://www.nicovideo.jp/user/16151608)
   - [塗りつぶしクロマキー](https://www.nicovideo.jp/watch/sm29797191)
+
+- [連結歯車](https://www.nicovideo.jp/user/84530131)
+  - [長方形角取り](https://www.nicovideo.jp/watch/sm34542414)
 
 ---
 
