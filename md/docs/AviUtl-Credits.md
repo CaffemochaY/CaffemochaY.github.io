@@ -21,7 +21,7 @@ in-out
 - [x264guiEx](https://github.com/rigaya/x264guiEx)
   - `x264guiEx 3.05`
 - [L-smash Works(Mr-Ojii版)](https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds)
-  - `L-smash Works Mr-Ojii r1086`
+  - `L-smash Works Mr-Ojii r1088`
 - [ffmpegOut](https://github.com/rigaya/ffmpegOut)
   - `ffmpegOut v1.00`
   - [FFmpeg](https://ffmpeg.org/)
@@ -34,7 +34,7 @@ in-out
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
   - `patch.aul r21`
-  - <details><summary>json-setting</summary>
+  - <details><summary>r21-json-setting</summary>
 
     ```json
     {
@@ -105,6 +105,91 @@ in-out
       }
     }
     ```
+
+    </details>
+  - `patch.aul r29`
+  - <details><summary>r29-json-setting</summary>
+
+      ```json
+
+      {
+        "console" : {
+          "visible" : false
+        },
+        "theme_cc" : {
+          "layer" : {
+            "height_large" : 27,
+            "height_medium" : 23,
+            "height_small" : 19,
+            "link_col" : "4040c0",
+            "clipping_col" : "c04040",
+            "lock_col" : [ "000000", "c04040" ],
+            "hide_alpha" : 0.850000
+          },
+          "object" : {
+            "media_col" : [ "10206c", "1830c0", "4080ff" ],
+            "mfilter_col" : [ "106c10", "18c018", "40f040" ],
+            "audio_col" : [ "6c1018", "c01820", "f83040" ],
+            "afilter_col" : [ "6c6c10", "c0c020", "d8d840" ],
+            "control_col" : [ "106c6c", "18c0c0", "40d8d8" ],
+            "inactive_col" : [ "606060", "808080", "909090" ],
+            "clipping_col" : "c04040",
+            "clipping_height" : -3,
+            "midpt_size" : [ 4, 3, 3 ],
+            "name_col" : [ "ffffff", "a0a0a0" ]
+          },
+          "timeline" : {
+            "scale_col" : [ "60a0ff", "204080" ],
+            "bpm_grid_col" : [ "646464", "a0a0a0" ]
+          }
+        },
+        "redo" : {
+          "shift" : false
+        },
+        "fast_exeditwindow" : {
+          "step" : 0
+        },
+        "fast_text" : {
+          "release_time" : 120
+        },
+        "switch" : {
+          "access_key" : false,
+          "exo_aviutlfilter" : true,
+          "exo_sceneidx" : true,
+          "exo_trackparam" : true,
+          "exo_track_minusval" : true,
+          "exo_specialcolorconv" : true,
+          "tra_aviutlfilter" : true,
+          "text_op_size" : true,
+          "ignore_media_param_reset" : false,
+          "theme_cc" : true,
+          "exeditwindow_sizing" : true,
+          "settingdialog_move" : true,
+          "undo" : true,
+          "undo.redo" : true,
+          "console" : true,
+          "console.escape" : true,
+          "console.input" : false,
+          "console.debug_string" : true,
+          "console.debug_string.time" : true,
+          "lua" : true,
+          "lua.env" : false,
+          "lua.path" : true,
+          "lua.getvalue" : true,
+          "lua.rand" : true,
+          "lua.randex" : true,
+          "fast" : true,
+          "fast.exeditwindow" : true,
+          "fast_settingdialog" : true,
+          "fast.text" : true,
+          "fast.cl" : true,
+          "fast.radiationalblur" : true,
+          "fast.polortransform" : true,
+          "fast.flash" : true
+        }
+      }
+
+      ```
 
     </details>
 - [InputPipePlugin](https://www.nicovideo.jp/watch/sm35585310)
@@ -368,6 +453,8 @@ in-out
   - `オブジェクトエクスプローラ version 2.0.2`
 - [フィルタのコピペ](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter)
   - `フィルタのコピペ 1.0.0`
+- [カラーコード追加](https://github.com/hebiiro/AviUtl-Plugin-AddColorCode)
+  - `カラーコード追加 v1.1.0`
 
 ---
 
