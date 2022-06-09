@@ -103,7 +103,7 @@
       ```
 
       </details>
-  - `patch.aul r32`
+  - `patch.aul r33`
     - <details><summary>r32-json-setting</summary>
 
       ```json
@@ -178,6 +178,7 @@
           "fast.exeditwindow" : true,
           "fast_settingdialog" : true,
           "fast.text" : true,
+          "fast.border" : true,
           "fast.cl" : true,
           "fast.radiationalblur" : true,
           "fast.polortransform" : true,
