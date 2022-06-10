@@ -1,4 +1,4 @@
-# Voice Speed Settings
+# Voice Settings
 
 ## COEIROINK
 
