@@ -1,5 +1,8 @@
 # かんしくん 設定
 
+- [setting.txt](#settingtxt)
+- [genexo.lua](#genexolua)
+
 ## setting.txt
 
 ```ini
