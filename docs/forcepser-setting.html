@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/github-markdown-light.css">
+	<title>forcepser-setting</title>
+
+	<style>
+		.markdown-body {
+			box-sizing: border-box;
+			min-width: 200px;
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 45px;
+		}
+		
+		@media (max-width: 767px) {
+			.markdown-body {
+				padding: 15px;
+			}
+		}
+	</style>
+</head>
+
+<body class="markdown-body">
+	<h1 id="%E3%81%8B%E3%82%93%E3%81%97%E3%81%8F%E3%82%93-%E8%A8%AD%E5%AE%9A">かんしくん 設定</h1>
+	<ul>
+		<li><a href="#settingtxt">setting.txt</a></li>
+		<li><a href="#genexolua">genexo.lua</a></li>
+	</ul>
+	<p><code>setting.txt</code> から <code>genexo.lua</code> に値を持っていっているので、 <code>genexo.lua</code> はそこまでいじらない方が良いと思う</p>
+	<h2 id="settingtxt">setting.txt</h2>
+	<pre class="hljs"><code><div>
+<span class="hljs-comment"># 文字コード : UTF-8</span>
+
+<span class="hljs-comment"># [wiki](https://github.com/oov/forcepser/wiki/設定について(0.1beta15以降))</span>
+<span class="hljs-comment"># [かんしくん設定ファイル作成ツール](https://oov.github.io/forcepser/)</span>
+
+<span class="hljs-comment"># -- グローバルセクション / 全体の設定 --</span>
+
+  basedir = 'D:\_exported_voices'
+  deletetext = false
+  destdir = '%PROJECTDIR%\voices'
+  filemove = 'move'
+  freshness = 60.0
+  padding = 650 <span class="hljs-comment"># (ms)</span>
+  sort = 'name'
+  sortdelay = 2.0
+
+
+<span class="hljs-comment"># -- [[rule]] セクション / 個別の設定 --</span>
+
+<span class="hljs-comment"># VOICEVOX</span>
+
+  <span class="hljs-comment"># VOICEVOX 四国めたん</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 四国めたん（ノーマル）</span>
+      layer = 1
+      filere = '^.+?_四国めたん（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.7dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 四国めたん（あまあま）</span>
+      layer = 1
+      filere = '^.+?_四国めたん（あまあま）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.0dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 四国めたん（ツンツン）</span>
+      layer = 1
+      filere = '^.+?_四国めたん（ツンツン）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 四国めたん（セクシー）</span>
+      layer = 1
+      filere = '^.+?_四国めたん（セクシー）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.8dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX ずんだもん</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX ずんだもん（ノーマル）</span>
+      layer = 2
+      filere = '^.+?_ずんだもん（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.6dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX ずんだもん（あまあま）</span>
+      layer = 2
+      filere = '^.+?_ずんだもん（あまあま）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.3dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX ずんだもん（ツンツン）</span>
+      layer = 2
+      filere = '^.+?_ずんだもん（ツンツン）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.8dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX ずんだもん（セクシー）</span>
+      layer = 2
+      filere = '^.+?_ずんだもん（セクシー）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.1dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 春日部つむぎ</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 春日部つむぎ（ノーマル）</span>
+      layer = 3
+      filere = '^.+?_春日部つむぎ（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.9dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 雨晴はう（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 雨晴はう（ノーマル）</span>
+      layer = 4
+      filere = '^.+?_雨晴はう（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.2dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 波音リツ（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 波音リツ（ノーマル）</span>
+      layer = 5
+      filere = '^.+?_波音リツ（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.2dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 玄野武宏（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 玄野武宏（ノーマル）</span>
+      layer = 6
+      filere = '^.+?_玄野武宏（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.8dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 白上虎太郎（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 白上虎太郎（ノーマル）</span>
+      layer = 7
+      filere = '^.+?_白上虎太郎（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.5dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 青山龍星（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 青山龍星（ノーマル）</span>
+      layer = 8
+      filere = '^.+?_青山龍星（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=2.0dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 冥鳴ひまり（ノーマル）</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 冥鳴ひまり（ノーマル）</span>
+      layer = 9
+      filere = '^.+?_冥鳴ひまり（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># VOICEVOX 九州そら</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 九州そら（ノーマル）</span>
+      layer = 10
+      filere = '^.+?_九州そら（ノーマル）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 九州そら（あまあま）</span>
+      layer = 10
+      filere = '^.+?_九州そら（あまあま）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.9dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 九州そら（ツンツン）</span>
+      layer = 10
+      filere = '^.+?_九州そら（ツンツン）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.4dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 九州そら（セクシー）</span>
+      layer = 10
+      filere = '^.+?_九州そら（セクシー）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># VOICEVOX 九州そら（ささやき）</span>
+      layer = 10
+      filere = '^.+?_九州そら（ささやき）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
+<span class="hljs-comment"># COEIROINK</span>
+
+  <span class="hljs-comment"># COEIROINK つくよみちゃん</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK つくよみちゃん（れいせい）</span>
+      layer = 11
+      filere = '^.+?_つくよみちゃん（れいせい）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=0.3dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK つくよみちゃん（おしとやか）</span>
+      layer = 11
+      filere = '^.+?_つくよみちゃん（おしとやか）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=1.0dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK つくよみちゃん（げんき）</span>
+      layer = 11
+      filere = '^.+?_つくよみちゃん（げんき）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-1.9dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># COEIROINK MANA</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK MANA（のーまる）</span>
+      layer = 12
+      filere = '^.+?_MANA（のーまる）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-1.0dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK MANA（いっしょうけんめい）</span>
+      layer = 12
+      filere = '^.+?_MANA（いっしょうけんめい）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-1.2dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># COEIROINK おふとんP</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK おふとんP（のーまる）</span>
+      layer = 13
+      filere = '^.+?_おふとんP（のーまる）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=0.3dB", "%AFTER%")
+      '''
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK おふとんP（ナレーション）</span>
+      layer = 13
+      filere = '^.+?_おふとんP（ナレーション）_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=1.2dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># COEIROINK ディアちゃん</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK ディアちゃん（のーまる）</span>
+      layer = 14
+      filere = '^.+?_ディアちゃん(?:|（.+?）)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-0.1dB", "%AFTER%")
+      '''
+
+  <span class="hljs-comment"># COEIROINK アルマちゃん</span>
+
+    <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># COEIROINK アルマちゃん（のーまる）</span>
+      layer = 15
+      filere = '^.+?_アルマちゃん(?:|（.+?）)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+      dir = '%BASEDIR%\COEIROINK'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "C" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-1.8dB", "%AFTER%")
+      '''
+
+<span class="hljs-comment"># A.I.VOICE</span>
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 結月 ゆかり</span>
+    layer = 16
+    filere = '^.+?_結月 ゆかり(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 結月 ゆかり（雫）</span>
+    layer = 17
+    filere = '^.+?_結月 ゆかり（雫）(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 琴葉 茜</span>
+    layer = 18
+    filere = '^.+?_琴葉 茜(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 琴葉 茜（蕾）</span>
+    layer = 19
+    filere = '^.+?_琴葉 茜（蕾）(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 琴葉 葵</span>
+    layer = 20
+    filere = '^.+?_琴葉 葵(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 琴葉 葵（蕾）</span>
+    layer = 21
+    filere = '^.+?_琴葉 葵（蕾）(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 紲星 あかり</span>
+    layer = 22
+    filere = '^.+?_紲星 あかり(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># A.I.VOICE 紲星 あかり（蕾）</span>
+    layer = 23
+    filere = '^.+?_紲星 あかり（蕾）(?:| - .+?)_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = '%BASEDIR%\AIVOICE'
+    encoding = 'sjis'
+    modifier = '''
+      filename = "A" .. filename
+    '''
+
+  <span class="hljs-comment"># CoeFont</span>
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># CoeFont アリアル</span>
+    layer = 24
+    filere = '^.+?_アリアル.*?_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = 'C:\Users\caffemocha\Downloads'
+    encoding = 'utf8'
+    modifier = '''
+      filename = "F" .. filename
+    '''
+
+  <span class="hljs-section">[[rule]]</span> <span class="hljs-comment"># CoeFont ミリアル</span>
+    layer = 25
+    filere = '^.+?_ミリアル.*?_.*?\.<span class="hljs-section">[Ww]</span><span class="hljs-section">[Aa]</span><span class="hljs-section">[Vv]</span>$'
+    dir = 'C:\Users\caffemocha\Downloads'
+    encoding = 'utf8'
+    modifier = '''
+      filename = "F" .. filename
+    '''
+
+</div></code></pre>
+	<h2 id="genexolua">genexo.lua</h2>
+	<pre class="hljs"><code><div>
+<span class="hljs-keyword">local</span> P = {}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">P.gen2</span><span class="hljs-params">(proj, file, text, rule)</span></span>
+  <span class="hljs-keyword">local</span> ai = getaudioinfo(file)
+  <span class="hljs-keyword">local</span> length = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">ceil</span>(ai.samples / ai.samplerate * proj.video_rate / proj.video_scale)
+  <span class="hljs-keyword">local</span> lpp = <span class="hljs-built_in">math</span>.<span class="hljs-built_in">ceil</span>((ai.samples / ai.samplerate + rule.padding * <span class="hljs-number">0.001</span>) * proj.video_rate * proj.video_scale)
+  <span class="hljs-keyword">local</span> mexo = <span class="hljs-string">[[
+[exedit]
+width=]]</span> .. proj.width .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+height=]]</span> .. proj.height .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+rate=]]</span> .. proj.video_rate .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+scale=]]</span> .. proj.video_scale .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+length=]]</span> .. lpp .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+audio_rate=]]</span> .. proj.audio_rate .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+audio_ch=]]</span> .. proj.audio_ch .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+[0]
+start=1
+end=]]</span> .. length .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+layer=1
+group=1
+overlay=1
+audio=1
+[0.0]
+_name=音声ファイル
+再生位置=0.00
+再生速度=100.0
+ループ再生=0
+動画ファイルと連携=0
+file=]]</span> .. file .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+[0.1]
+_name=標準再生
+音量=100.0
+左右=0.0
+[1]
+start=1
+end=]]</span> .. lpp .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+layer=2
+group=1
+overlay=1
+camera=0
+[1.0]
+_name=テキスト
+サイズ=1
+表示速度=0.0
+文字毎に個別オブジェクト=0
+移動座標上に表示する=0
+自動スクロール=0
+B=0
+I=0
+type=0
+autoadjust=0
+soft=0
+monospace=0
+align=4
+spacing_x=0
+spacing_y=0
+precision=0
+color=ffffff
+color2=000000
+font=MS UI Gothic
+text=]]</span> .. toexostring(<span class="hljs-string">'&lt;?s=[==[\r\n'</span> .. text .. <span class="hljs-string">'\r\n]==];require("PSDToolKit").prep.init({ls_mgl=0,ls_mgr=0,st_mgl=0,st_mgr=0,sl_mgl=0,sl_mgr=0,},obj,s)?&gt;'</span>) .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+[1.1]
+_name=アニメーション効果
+track0=0
+track1=0
+track2=0
+track3=0
+check0=0
+type=0
+filter=2
+name=口パク準備@PSDToolKit
+param=file="]]</span> .. <span class="hljs-built_in">string</span>.<span class="hljs-built_in">gsub</span>(file, <span class="hljs-string">"\\"</span>, <span class="hljs-string">"\\\\"</span>) .. <span class="hljs-string">"\""</span> .. <span class="hljs-string">"\r\n"</span> .. <span class="hljs-string">[[
+[1.2]
+_name=標準描画
+X=0.0
+Y=0.0
+Z=0.0
+拡大率=100.00
+透明度=0.0
+回転=0.00
+blend=0
+]]</span>
+
+  <span class="hljs-keyword">return</span> tosjis(mexo), lpp
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-keyword">return</span> P
+
+
+</div></code></pre>
+
+</body>
+
+</html>
