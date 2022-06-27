@@ -124,7 +124,9 @@
 - [InputPipePlugin](https://www.nicovideo.jp/watch/sm35585310)
   - `InputPipePlugin v1.9`
 
-  ---
+### その他
+
+#### [ePi](https://scrapbox.io/ePi5131/)
 
 - [export2clipboard](https://scrapbox.io/ePi5131/export2clipboard)
   - `export2clipboard`
@@ -133,7 +135,7 @@
 - [AulsPNG出力(修正版)](https://scrapbox.io/ePi5131/AulsPNG出力_バグ修正)
   - `AulsPNG出力 バグ修正`
 
-  ---
+#### [Karoterra](https://github.com/karoterra)
 
 - [波形プレビュー](https://www.nicovideo.jp/watch/sm39258128)
   - `WaveformPreview v0.3.0`
@@ -142,12 +144,12 @@
 - [上限確認](https://github.com/karoterra/aviutl_ShowLimit)
   - `上限確認 v0.2.0`
 
-  ---
+#### Auls
 
 - [ショートカット追加](https://auls.client.jp/)
   - `ショートカット追加`
 
-  ---
+#### [hebiiro](https://github.com/hebiiro)
 
 - [フィルタドラッグ移動](https://github.com/hebiiro/AviUtl-Plugin-DragFilter)
   - `フィルタドラッグ移動 v9.0.0`
@@ -385,7 +387,7 @@
 - [カラーコード追加](https://github.com/hebiiro/AviUtl-Plugin-AddColorCode)
   - `カラーコード追加 v1.1.0`
 
-  ---
+#### [amate](https://github.com/amate)
 
 - [設定ダイアログ画面サイズ固定化](https://www.nicovideo.jp/watch/sm36085428)
   - `設定ダイアログ画面サイズ固定化 v2.6`
@@ -405,7 +407,7 @@
 
       </details>
 
-  ---
+#### [aoytsk](https://aoytsk.blog.jp/)
 
 - [拡張ツールバー](https://aoytsk.blog.jp/aviutl/1644995.html)
   - `拡張ツールバー v0.3.6`
@@ -416,7 +418,7 @@
 - [シーン切替](https://aoytsk.blog.jp/aviutl/1769130.html)
   - `シーン切替 v0.2.0b`
 
-  ---
+#### [蝙蝠の目](https://github.com/kumrnm)
 
 - [真・グループ制御](https://www.nicovideo.jp/watch/sm39776727)
   - `真・グループ制御 v1.1.0`
@@ -425,12 +427,12 @@
 - [マウスオペレーション改](https://github.com/kumrnm/aviutl-advanced-mouse-operation)
   - `マウスオペレーション改 v1.0.0`
 
-  ---
+#### [謎の生物](https://www.nicovideo.jp/user/119638815)
 
 - [カメラ補助](https://www.nicovideo.jp/watch/sm39701988)
   - `カメラ補助プラグイン v1.7`
 
-  ---
+#### [oov](https://github.com/oov)
 
 - [PSDToolKit](https://github.com/oov/aviutl_psdtoolkit)
   - `PSDToolKit v0.2beta56`
@@ -449,7 +451,7 @@
 - [bridge.dll](https://github.com/oov/aviutl_bridge)
   - `bridge.dll v0.14.0`
 
-  ---
+#### [rikky](https://www.nicovideo.jp/user/14059878)
 
 - [rikky module&memory](https://hazumurhythm.com/a/a2Z/)
   - `rikky_module v1.4b`
@@ -464,29 +466,29 @@
 - [スクリプト並べ替え管理](https://hazumurhythm.com/a/Di0/)
   - `スクリプト並べ替え管理 v2`
 
-  ---
+#### うえぽん
 
 - [JPEG 3点セット](http://auf.jpn.xxxxxxxx.jp/)
   - `JPEG 3点セット v0.3.1`
 - [虫眼鏡プラグイン](http://auf.jpn.xxxxxxxx.jp/)
   - `虫眼鏡プラグイン r8`
 
-  ---
+#### [Aios-Ciao](https://github.com/Aios-Ciao)
 
 - [VSTホストプラグイン](https://www.nicovideo.jp/watch/sm29926034)
   - `VSTホストプラグイン v0.1`
 
-  ---
+#### [Aji](https://aji0.web.fc2.com/)
 
 - [色調補正・改](https://aji0.web.fc2.com/)
   - `色調補正・改 v2.0`
 
-  ---
+#### [Mr-Ojii](https://github.com/Mr-Ojii)
 
 - [MotionTracking_MKII_Plus](https://github.com/Mr-Ojii/MotionTracking_MKII_Plus)
   - `MotionTracking_MKII_Plus r41`
 
-  ---
+---
 
 ## ini_edit
 
