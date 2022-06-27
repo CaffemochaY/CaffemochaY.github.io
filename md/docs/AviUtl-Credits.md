@@ -29,88 +29,15 @@
 ### 必須枠
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
-  - `patch.aul r21`
-    - <details><summary>r21-json-setting</summary>
+  - `patch.aul r40 test2`
+    - <details><summary>r40 test2 json setting</summary>
 
       ```json
+
       {
         "console" : {
           "visible" : true,
-          "rect" : [ -8, 499, 1425, 1047 ]
-        },
-        "theme_cc" : {
-          "layer" : {
-            "height_large" : 27,
-            "height_medium" : 23,
-            "height_small" : 19,
-            "link_col" : "4040c0",
-            "clipping_col" : "c04040",
-            "lock_col" : [ "000000", "c04040" ],
-            "hide_alpha" : 0.850000
-          },
-          "object" : {
-            "media_col" : [ "10206c", "1830c0", "4080ff" ],
-            "mfilter_col" : [ "106c10", "18c018", "40f040" ],
-            "audio_col" : [ "6c1018", "c01820", "f83040" ],
-            "afilter_col" : [ "6c6c10", "c0c020", "d8d840" ],
-            "control_col" : [ "106c6c", "18c0c0", "40d8d8" ],
-            "inactive_col" : [ "606060", "808080", "909090" ],
-            "clipping_col" : "c04040",
-            "clipping_height" : -3,
-            "midpt_size" : [ 4, 3, 3 ],
-            "name_col" : [ "ffffff", "a0a0a0" ]
-          },
-          "timeline" : {
-            "scale_col" : [ "60a0ff", "204080" ],
-            "bpm_grid_col" : [ "646464", "a0a0a0" ]
-          }
-        },
-        "switch" : {
-          "access_key" : false,
-          "exo_aviutl_filter" : true,
-          "exo_track_minusval" : true,
-          "exo_sceneidx" : true,
-          "exo_trackparam" : true,
-          "exo_specialcolorconv" : true,
-          "text_op_size" : true,
-          "ignore_media_param_reset" : false,
-          "theme_cc" : true,
-          "exeditwindow_sizing" : true,
-          "settingdialog_move" : true,
-          "undo" : true,
-          "undo.redo" : true,
-          "undo.redo.shift" : false,
-          "console" : true,
-          "console.escape" : true,
-          "console.input" : false,
-          "console.debug_string" : true,
-          "console.debug_string.time" : true,
-          "lua" : true,
-          "lua.env" : false,
-          "lua.rand" : true,
-          "lua.randex" : true,
-          "lua.getvalue" : true,
-          "lua.path" : true,
-          "fast" : true,
-          "fast.cl" : true,
-          "fast.exeditwindow" : true,
-          "fast.exeditwindow.step" : 0,
-          "fast.settingdialog" : true,
-          "fast.radiationalblur" : true,
-          "fast.polortransform" : true
-        }
-      }
-      ```
-
-      </details>
-  - `patch.aul r33`
-    - <details><summary>r32-json-setting</summary>
-
-      ```json
-
-      {
-        "console" : {
-          "visible" : false
+          "rect" : [ 10, 511, 1443, 1054 ]
         },
         "theme_cc" : {
           "layer" : {
@@ -161,6 +88,8 @@
           "theme_cc" : true,
           "exeditwindow_sizing" : true,
           "settingdialog_move" : true,
+          "obj_lensblur" : true,
+          "settingdialog_excolorconfig" : true,
           "undo" : true,
           "undo.redo" : true,
           "console" : true,
@@ -182,7 +111,10 @@
           "fast.cl" : true,
           "fast.radiationalblur" : true,
           "fast.polortransform" : true,
-          "fast.flash" : true
+          "fast.displacementmap" : true,
+          "fast.flash" : true,
+          "fast.directionalblur" : true,
+          "fast.lensblur" : true
         }
       }
 
@@ -190,7 +122,7 @@
 
       </details>
 - [InputPipePlugin](https://www.nicovideo.jp/watch/sm35585310)
-  - `InputPipePlugin v1.8`
+  - `InputPipePlugin v1.9`
 
   ---
 
@@ -820,7 +752,6 @@
 
 ### [UndoFish/あんどぅ](https://www.nicovideo.jp/user/26576669)
 
-- [トラックバー対応イージングスクリプト 2020版](https://www.nicovideo.jp/watch/sm37721332)
 - [文字輪郭追跡](https://www.nicovideo.jp/watch/sm21828818)
 
 ### [さつき](https://bowlroll.net/file/3777)
@@ -841,6 +772,10 @@
 ### [スノスク](https://www.nicovideo.jp/user/16086289)
 
 - [拡大縮小ランダム配置](https://www.nicovideo.jp/watch/sm37678490)
+
+### [染尾根](https://twitter.com/someone_nico)
+
+- [正多角形モーフィング](https://twitter.com/someone_nico/status/1386313406697795588)
 
 ### [ちくぼん](https://www.nicovideo.jp/user/14280641)
 
