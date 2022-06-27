@@ -3,6 +3,8 @@
 - [setting.txt](#settingtxt)
 - [genexo.lua](#genexolua)
 
+`setting.txt` から `genexo.lua` に値を持っていっているので、 `genexo.lua` はそこまでいじらない方が良いと思う
+
 ## setting.txt
 
 ```ini
