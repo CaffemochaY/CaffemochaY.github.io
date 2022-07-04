@@ -33,8 +33,7 @@
 	</ul>
 	<p><code>setting.txt</code> から <code>genexo.lua</code> に値を持っていっているので、 <code>genexo.lua</code> はそこまでいじらない方が良いと思う</p>
 	<h2 id="settingtxt">setting.txt</h2>
-	<pre class="hljs"><code><div>
-<span class="hljs-comment"># 文字コード : UTF-8</span>
+	<pre class="hljs"><code><div><span class="hljs-comment"># 文字コード : UTF-8</span>
 
 <span class="hljs-comment"># [wiki](https://github.com/oov/forcepser/wiki/設定について(0.1beta15以降))</span>
 <span class="hljs-comment"># [かんしくん設定ファイル作成ツール](https://oov.github.io/forcepser/)</span>
@@ -469,12 +468,10 @@
     encoding = 'utf8'
     modifier = '''
       filename = "F" .. filename
-    '''
+    '''</div></code></pre>
 
-</div></code></pre>
 	<h2 id="genexolua">genexo.lua</h2>
-	<pre class="hljs"><code><div>
-<span class="hljs-keyword">local</span> P = {}
+	<pre class="hljs"><code><div><span class="hljs-keyword">local</span> P = {}
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">P.gen2</span><span class="hljs-params">(proj, file, text, rule)</span></span>
   <span class="hljs-keyword">local</span> ai = getaudioinfo(file)
@@ -560,10 +557,7 @@ blend=0
   <span class="hljs-keyword">return</span> tosjis(mexo), lpp
 <span class="hljs-keyword">end</span>
 
-<span class="hljs-keyword">return</span> P
-
-
-</div></code></pre>
+<span class="hljs-keyword">return</span> P</div></code></pre>
 
 </body>
 
