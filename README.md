@@ -2,11 +2,12 @@
 
 github-pages用のレポジトリ
 
-markdownで書いたファイルが [md](md) フォルダにあるので、書き終わるまではそっちを見て
+markdownで書いたファイルが [md](md) フォルダにあります\
+markdownの方の目次 : [index.md](md/index.md)
 
 ## License
 
-MIT License  
+MIT License\
 [LICENSE](LICENSE)
 
 ## Credit
