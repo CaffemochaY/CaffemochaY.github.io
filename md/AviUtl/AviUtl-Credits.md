@@ -19,7 +19,7 @@
 - [x264guiEx](https://github.com/rigaya/x264guiEx)
   - `x264guiEx 3.09`
 - [L-smash Works(Mr-Ojii版)](https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds)
-  - `L-smash Works Mr-Ojii r1086`
+  - `L-smash Works Mr-Ojii r1096`
 - [ffmpegOut](https://github.com/rigaya/ffmpegOut)
   - `ffmpegOut v1.01`
   - [FFmpeg](https://ffmpeg.org/)
@@ -121,7 +121,7 @@
       ```
 
       </details>
-- [InputPipePlugin](https://www.nicovideo.jp/watch/sm35585310)
+- [InputPipePlugin](https://github.com/amate/InputPipePlugin)
   - `InputPipePlugin v1.9`
 
 ### その他
@@ -137,7 +137,7 @@
 
 #### [Karoterra](https://github.com/karoterra)
 
-- [波形プレビュー](https://www.nicovideo.jp/watch/sm39258128)
+- [波形プレビュー](https://github.com/karoterra/aviutl_WaveformPreview)
   - `WaveformPreview v0.3.0`
 - [改変版Auls終了確認](https://scrapbox.io/karoterra/%E6%94%B9%E5%A4%89%E7%89%88Auls%E7%B5%82%E4%BA%86%E7%A2%BA%E8%AA%8D)
   - `改変版Auls終了確認 v1.2`
@@ -389,7 +389,7 @@
 
 #### [amate](https://github.com/amate)
 
-- [設定ダイアログ画面サイズ固定化](https://www.nicovideo.jp/watch/sm36085428)
+- [設定ダイアログ画面サイズ固定化](https://github.com/amate/PropertyWindowFixerPlugin)
   - `設定ダイアログ画面サイズ固定化 v2.6`
     - <details><summary>ini-setting</summary>
 
@@ -420,10 +420,10 @@
 
 #### [蝙蝠の目](https://github.com/kumrnm)
 
-- [真・グループ制御](https://www.nicovideo.jp/watch/sm39776727)
+- [真・グループ制御](https://github.com/kumrnm/aviutl-authentic-grouping)
   - `真・グループ制御 v1.1.0`
 - [イージング設定時短](https://github.com/kumrnm/aviutl-easing-quick-setup)
-  - `easing_quick_setup v1.0.0`
+  - `easing_quick_setup v1.0.1`
 - [マウスオペレーション改](https://github.com/kumrnm/aviutl-advanced-mouse-operation)
   - `マウスオペレーション改 v1.0.0`
 
@@ -550,7 +550,7 @@
 - [コントラスト比自動計算](https://www.nicovideo.jp/watch/sm40317056)
 - [任意番号個別エフェクト](https://twitter.com/CaffemochaY/status/1524698397952909312)
 
-### [ePi](https://scrapbox.io/ePi5131/)
+### ePi
 
 - BChromakey
 - [ease](https://scrapbox.io/ePi5131/ease)
@@ -629,7 +629,7 @@
 - [破壊](https://twitter.com/moll_movie/status/1506290812124123136)
 - [崩落](https://twitter.com/moll_movie/status/1516673075194245121)
 
-### [Mr-Ojii](https://github.com/Mr-Ojii)
+### Mr-Ojii
 
 - [ImageLoader_M](https://github.com/Mr-Ojii/ImageLoader_M)
 - [Bevel_And_Emboss_M](https://github.com/Mr-Ojii/Bevel_And_Emboss_M)
@@ -643,7 +643,7 @@
 - マルチベジェ軌道
 - 偽被写界深度2
 
-### [rikky](https://www.nicovideo.jp/user/14059878)
+### rikky
 
 - [立体化(R)](https://hazumurhythm.com/a/1Sm/)
 - [カメラ手ぶれ(R)](https://hazumurhythm.com/a/2Nr/)
