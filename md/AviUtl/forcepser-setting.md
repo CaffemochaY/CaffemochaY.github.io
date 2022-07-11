@@ -28,234 +28,12 @@
 
 # -- [[rule]] セクション / 個別の設定 --
 
-# VOICEVOX
-
-  # VOICEVOX 四国めたん
-
-    [[rule]] # VOICEVOX 四国めたん（ノーマル）
-      layer = 1
-      filere = '^.+?_四国めたん（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.7dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 四国めたん（あまあま）
-      layer = 1
-      filere = '^.+?_四国めたん（あまあま）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.0dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 四国めたん（ツンツン）
-      layer = 1
-      filere = '^.+?_四国めたん（ツンツン）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 四国めたん（セクシー）
-      layer = 1
-      filere = '^.+?_四国めたん（セクシー）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.8dB", "%AFTER%")
-      '''
-
-  # VOICEVOX ずんだもん
-
-    [[rule]] # VOICEVOX ずんだもん（ノーマル）
-      layer = 2
-      filere = '^.+?_ずんだもん（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.6dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX ずんだもん（あまあま）
-      layer = 2
-      filere = '^.+?_ずんだもん（あまあま）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.3dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX ずんだもん（ツンツン）
-      layer = 2
-      filere = '^.+?_ずんだもん（ツンツン）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.8dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX ずんだもん（セクシー）
-      layer = 2
-      filere = '^.+?_ずんだもん（セクシー）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.1dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 春日部つむぎ
-
-    [[rule]] # VOICEVOX 春日部つむぎ（ノーマル）
-      layer = 3
-      filere = '^.+?_春日部つむぎ（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.9dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 雨晴はう（ノーマル）
-
-    [[rule]] # VOICEVOX 雨晴はう（ノーマル）
-      layer = 4
-      filere = '^.+?_雨晴はう（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.2dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 波音リツ（ノーマル）
-
-    [[rule]] # VOICEVOX 波音リツ（ノーマル）
-      layer = 5
-      filere = '^.+?_波音リツ（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.2dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 玄野武宏（ノーマル）
-
-    [[rule]] # VOICEVOX 玄野武宏（ノーマル）
-      layer = 6
-      filere = '^.+?_玄野武宏（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.8dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 白上虎太郎（ノーマル）
-
-    [[rule]] # VOICEVOX 白上虎太郎（ノーマル）
-      layer = 7
-      filere = '^.+?_白上虎太郎（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.5dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 青山龍星（ノーマル）
-
-    [[rule]] # VOICEVOX 青山龍星（ノーマル）
-      layer = 8
-      filere = '^.+?_青山龍星（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=2.0dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 冥鳴ひまり（ノーマル）
-
-    [[rule]] # VOICEVOX 冥鳴ひまり（ノーマル）
-      layer = 9
-      filere = '^.+?_冥鳴ひまり（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
-      '''
-
-  # VOICEVOX 九州そら
-
-    [[rule]] # VOICEVOX 九州そら（ノーマル）
-      layer = 10
-      filere = '^.+?_九州そら（ノーマル）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 九州そら（あまあま）
-      layer = 10
-      filere = '^.+?_九州そら（あまあま）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.9dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 九州そら（ツンツン）
-      layer = 10
-      filere = '^.+?_九州そら（ツンツン）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.4dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 九州そら（セクシー）
-      layer = 10
-      filere = '^.+?_九州そら（セクシー）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
-      '''
-
-    [[rule]] # VOICEVOX 九州そら（ささやき）
-      layer = 10
-      filere = '^.+?_九州そら（ささやき）_.*?\.[Ww][Aa][Vv]$'
-      dir = '%BASEDIR%\VOICEVOX'
-      encoding = 'sjis'
-      modifier = '''
-        filename = "V" .. filename
-        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
-      '''
-
 # COEIROINK
 
   # COEIROINK つくよみちゃん
 
     [[rule]] # COEIROINK つくよみちゃん（れいせい）
-      layer = 11
+      layer = 1
       filere = '^.+?_つくよみちゃん（れいせい）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -265,7 +43,7 @@
       '''
 
     [[rule]] # COEIROINK つくよみちゃん（おしとやか）
-      layer = 11
+      layer = 1
       filere = '^.+?_つくよみちゃん（おしとやか）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -275,7 +53,7 @@
       '''
 
     [[rule]] # COEIROINK つくよみちゃん（げんき）
-      layer = 11
+      layer = 1
       filere = '^.+?_つくよみちゃん（げんき）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -287,7 +65,7 @@
   # COEIROINK MANA
 
     [[rule]] # COEIROINK MANA（のーまる）
-      layer = 12
+      layer = 2
       filere = '^.+?_MANA（のーまる）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -297,7 +75,7 @@
       '''
 
     [[rule]] # COEIROINK MANA（いっしょうけんめい）
-      layer = 12
+      layer = 2
       filere = '^.+?_MANA（いっしょうけんめい）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -309,7 +87,7 @@
   # COEIROINK おふとんP
 
     [[rule]] # COEIROINK おふとんP（のーまる）
-      layer = 13
+      layer = 3
       filere = '^.+?_おふとんP（のーまる）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -319,7 +97,7 @@
       '''
 
     [[rule]] # COEIROINK おふとんP（ナレーション）
-      layer = 13
+      layer = 3
       filere = '^.+?_おふとんP（ナレーション）_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -331,7 +109,7 @@
   # COEIROINK ディアちゃん
 
     [[rule]] # COEIROINK ディアちゃん（のーまる）
-      layer = 14
+      layer = 4
       filere = '^.+?_ディアちゃん(?:|（.+?）)_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -343,7 +121,7 @@
   # COEIROINK アルマちゃん
 
     [[rule]] # COEIROINK アルマちゃん（のーまる）
-      layer = 15
+      layer = 5
       filere = '^.+?_アルマちゃん(?:|（.+?）)_.*?\.[Ww][Aa][Vv]$'
       dir = '%BASEDIR%\COEIROINK'
       encoding = 'sjis'
@@ -351,6 +129,230 @@
         filename = "C" .. filename
         execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=-1.8dB", "%AFTER%")
       '''
+
+
+# VOICEVOX
+
+  # VOICEVOX 四国めたん
+
+    [[rule]] # VOICEVOX 四国めたん（ノーマル）
+      layer = 6
+      filere = '^.+?_四国めたん（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.7dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 四国めたん（あまあま）
+      layer = 6
+      filere = '^.+?_四国めたん（あまあま）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.0dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 四国めたん（ツンツン）
+      layer = 6
+      filere = '^.+?_四国めたん（ツンツン）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 四国めたん（セクシー）
+      layer = 6
+      filere = '^.+?_四国めたん（セクシー）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.8dB", "%AFTER%")
+      '''
+
+  # VOICEVOX ずんだもん
+
+    [[rule]] # VOICEVOX ずんだもん（ノーマル）
+      layer = 7
+      filere = '^.+?_ずんだもん（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.6dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX ずんだもん（あまあま）
+      layer = 7
+      filere = '^.+?_ずんだもん（あまあま）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.3dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX ずんだもん（ツンツン）
+      layer = 7
+      filere = '^.+?_ずんだもん（ツンツン）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.8dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX ずんだもん（セクシー）
+      layer = 7
+      filere = '^.+?_ずんだもん（セクシー）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.1dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 春日部つむぎ
+
+    [[rule]] # VOICEVOX 春日部つむぎ（ノーマル）
+      layer = 8
+      filere = '^.+?_春日部つむぎ（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.9dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 雨晴はう（ノーマル）
+
+    [[rule]] # VOICEVOX 雨晴はう（ノーマル）
+      layer = 9
+      filere = '^.+?_雨晴はう（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.2dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 波音リツ（ノーマル）
+
+    [[rule]] # VOICEVOX 波音リツ（ノーマル）
+      layer = 15
+      filere = '^.+?_波音リツ（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=8.2dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 玄野武宏（ノーマル）
+
+    [[rule]] # VOICEVOX 玄野武宏（ノーマル）
+      layer = 11
+      filere = '^.+?_玄野武宏（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=5.8dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 白上虎太郎（ノーマル）
+
+    [[rule]] # VOICEVOX 白上虎太郎（ノーマル）
+      layer = 12
+      filere = '^.+?_白上虎太郎（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=4.5dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 青山龍星（ノーマル）
+
+    [[rule]] # VOICEVOX 青山龍星（ノーマル）
+      layer = 13
+      filere = '^.+?_青山龍星（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=2.0dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 冥鳴ひまり（ノーマル）
+
+    [[rule]] # VOICEVOX 冥鳴ひまり（ノーマル）
+      layer = 14
+      filere = '^.+?_冥鳴ひまり（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
+      '''
+
+  # VOICEVOX 九州そら
+
+    [[rule]] # VOICEVOX 九州そら（ノーマル）
+      layer = 15
+      filere = '^.+?_九州そら（ノーマル）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 九州そら（あまあま）
+      layer = 15
+      filere = '^.+?_九州そら（あまあま）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.9dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 九州そら（ツンツン）
+      layer = 15
+      filere = '^.+?_九州そら（ツンツン）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.4dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 九州そら（セクシー）
+      layer = 15
+      filere = '^.+?_九州そら（セクシー）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=6.7dB", "%AFTER%")
+      '''
+
+    [[rule]] # VOICEVOX 九州そら（ささやき）
+      layer = 15
+      filere = '^.+?_九州そら（ささやき）_.*?\.[Ww][Aa][Vv]$'
+      dir = '%BASEDIR%\VOICEVOX'
+      encoding = 'sjis'
+      modifier = '''
+        filename = "V" .. filename
+        execute("C:\\ffmpeg\\bin\\ffmpeg.exe", "-i", "%BEFORE%", "-af", "volume=7.0dB", "%AFTER%")
+      '''
+
 
 # A.I.VOICE
 
@@ -426,10 +428,62 @@
       filename = "A" .. filename
     '''
 
-  # CoeFont
+
+# VOICEROID＋ 東北きりたん EX
+  [[asas]]
+    exe = 'C:\Program Files (x86)\AHS\VOICEROID+\KiritanEX\VOICEROID.exe'
+    folder = '%BASEDIR%\VOICEROID'
+    format = '東北きりたん_*.wav'
+
+  [[rule]]
+    layer = 24
+    encoding = 'sjis'
+    dir = '%BASEDIR%\VOICEROID'
+    file = '東北きりたん_*.wav'
+    modifier = '''
+      text = re.gsub(text, "＜＜(.*?)｜.*?＞＞", "${1}") -- セリフからルビを除去
+      filename = "R" .. os.date("%y%m%d%H%M%S") .. "_東北きりたん_" .. tofilename(text, 10) .. ".wav"
+    '''
+
+
+# ガイノイドTalk
+
+  [[asas]]
+    exe = 'C:\Program Files (x86)\Gynoid\GynoidTalk\GynoidTalkEditor.exe'
+    folder = '%BASEDIR%\gynoid'
+    format = 'Gynoid_*.wav'
+
+  [[rule]] # 鳴花ヒメ
+    layer = 25
+    encoding = 'sjis'
+    dir = '%BASEDIR%\gynoid'
+    file = 'Gynoid_*.wav'
+    text = '^鳴花ヒメ(?:| - .+?)＞'
+    modifier = '''
+      userdata = re.gsub(text, "＞.*?$", "")
+      text = re.gsub(text, "^.*?＞", "") -- セリフからボイスプリセットタグを除去
+      text = re.gsub(text, "＜＜(.*?)｜.*?＞＞", "${1}") -- セリフからルビを除去
+      filename = "G" .. os.date("%y%m%d%H%M%S") .. userdata .. "_" .. tofilename(text, 10) .. ".wav"
+    '''
+
+  [[rule]] # 鳴花ミコト
+    layer = 26
+    encoding = 'sjis'
+    dir = '%BASEDIR%\gynoid'
+    file = 'Gynoid_*.wav'
+    text = '^鳴花ミコト(?:| - .+?)＞'
+    modifier = '''
+      userdata = re.gsub(text, "＞.*?$", "")
+      text = re.gsub(text, "^.*?＞", "") -- セリフからボイスプリセットタグを除去
+      text = re.gsub(text, "＜＜(.*?)｜.*?＞＞", "${1}") -- セリフからルビを除去
+      filename = "G" .. os.date("%y%m%d%H%M%S") .. userdata .. "_" .. tofilename(text, 10) .. ".wav"
+    '''
+
+
+# CoeFont
 
   [[rule]] # CoeFont アリアル
-    layer = 24
+    layer = 27
     filere = '^.+?_アリアル.*?_.*?\.[Ww][Aa][Vv]$'
     dir = 'C:\Users\caffemocha\Downloads'
     encoding = 'utf8'
@@ -438,7 +492,7 @@
     '''
 
   [[rule]] # CoeFont ミリアル
-    layer = 25
+    layer = 28
     filere = '^.+?_ミリアル.*?_.*?\.[Ww][Aa][Vv]$'
     dir = 'C:\Users\caffemocha\Downloads'
     encoding = 'utf8'
