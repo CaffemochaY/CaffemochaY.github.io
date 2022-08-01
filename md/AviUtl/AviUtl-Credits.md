@@ -29,21 +29,21 @@
 ### 必須枠
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
-  - `patch.aul r40 test2`
-    - <details><summary>r40 test2 json setting</summary>
+  - `patch.aul r41.3`
+    - <details><summary>r41.3 json setting</summary>
 
       ```json
 
       {
         "console" : {
           "visible" : true,
-          "rect" : [ 10, 511, 1443, 1054 ]
+          "rect" : [ 11, 513, 1004, 1032 ]
         },
         "theme_cc" : {
           "layer" : {
-            "height_large" : 27,
-            "height_medium" : 23,
-            "height_small" : 19,
+            "height_large" : 19,
+            "height_medium" : 17,
+            "height_small" : 16,
             "link_col" : "4040c0",
             "clipping_col" : "c04040",
             "lock_col" : [ "000000", "c04040" ],
@@ -83,13 +83,20 @@
           "exo_track_minusval" : true,
           "exo_specialcolorconv" : true,
           "tra_aviutlfilter" : true,
+          "tra_change_drawfilter" : true,
+          "tra_specified_speed" : true,
           "text_op_size" : true,
           "ignore_media_param_reset" : false,
           "theme_cc" : true,
           "exeditwindow_sizing" : true,
           "settingdialog_move" : true,
+          "obj_colorcorrection" : true,
           "obj_lensblur" : true,
+          "obj_noise" : true,
           "settingdialog_excolorconfig" : true,
+          "r_click_menu_split" : true,
+          "r_click_menu_delete" : true,
+          "blend" : true,
           "undo" : true,
           "undo.redo" : true,
           "console" : true,
@@ -107,6 +114,7 @@
           "fast.exeditwindow" : true,
           "fast_settingdialog" : true,
           "fast.text" : true,
+          "fast.create_figure" : true,
           "fast.border" : true,
           "fast.cl" : true,
           "fast.radiationalblur" : true,
@@ -142,7 +150,7 @@
 - [改変版Auls終了確認](https://scrapbox.io/karoterra/%E6%94%B9%E5%A4%89%E7%89%88Auls%E7%B5%82%E4%BA%86%E7%A2%BA%E8%AA%8D)
   - `改変版Auls終了確認 v1.2`
 - [上限確認](https://github.com/karoterra/aviutl_ShowLimit)
-  - `上限確認 v0.2.0`
+  - `上限確認 v0.3.0`
 
 #### Auls
 
@@ -431,6 +439,8 @@
 
 - [カメラ補助](https://www.nicovideo.jp/watch/sm39701988)
   - `カメラ補助プラグイン v1.7`
+- エフェクト並び替え
+  - `SortEffect v0.4`
 
 #### [oov](https://github.com/oov)
 
@@ -549,6 +559,8 @@
 - [ディフュージョン](https://www.nicovideo.jp/watch/sm40317056)
 - [コントラスト比自動計算](https://www.nicovideo.jp/watch/sm40317056)
 - [任意番号個別エフェクト](https://twitter.com/CaffemochaY/status/1524698397952909312)
+- [マスク画像化](https://github.com/CaffemochaY/CaffemochaY-AviUtl-Scripts#マスク画像化)
+- [斜めブラインドシャドー](https://github.com/CaffemochaY/CaffemochaY-AviUtl-Scripts#斜めブラインドシャドー)
 
 ### ePi
 
