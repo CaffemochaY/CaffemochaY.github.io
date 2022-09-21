@@ -29,15 +29,15 @@
 ### 必須枠
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
-  - `patch.aul r41.3`
-    - <details><summary>r41.3 json setting</summary>
+  - `patch.aul r42.3`
+    - <details><summary>r42.3 json setting</summary>
 
       ```json
 
       {
         "console" : {
           "visible" : true,
-          "rect" : [ 11, 513, 1004, 1032 ]
+          "rect" : [ -8, 498, 1422, 1048 ]
         },
         "theme_cc" : {
           "layer" : {
@@ -47,7 +47,7 @@
             "link_col" : "4040c0",
             "clipping_col" : "c04040",
             "lock_col" : [ "000000", "c04040" ],
-            "hide_alpha" : 0.850000
+            "hide_alpha" : 0.85
           },
           "object" : {
             "media_col" : [ "10206c", "1830c0", "4080ff" ],
@@ -77,26 +77,34 @@
         },
         "switch" : {
           "access_key" : false,
+          "colorpalette_cache" : true,
+          "aup_scene_setting" : true,
           "exo_aviutlfilter" : true,
           "exo_sceneidx" : true,
           "exo_trackparam" : true,
           "exo_track_minusval" : true,
           "exo_specialcolorconv" : true,
+          "exa_fold_gui" : true,
           "tra_aviutlfilter" : true,
           "tra_change_drawfilter" : true,
           "tra_specified_speed" : true,
           "text_op_size" : true,
           "ignore_media_param_reset" : false,
+          "failed_sjis_msgbox" : true,
           "theme_cc" : true,
           "exeditwindow_sizing" : true,
           "settingdialog_move" : true,
+          "obj_audiofile" : true,
           "obj_colorcorrection" : true,
           "obj_lensblur" : true,
           "obj_noise" : true,
+          "obj_specialcolorconv" : true,
           "settingdialog_excolorconfig" : true,
           "r_click_menu_split" : true,
           "r_click_menu_delete" : true,
           "blend" : true,
+          "add_extension" : true,
+          "new_project_editbox" : true,
           "undo" : true,
           "undo.redo" : true,
           "console" : true,
@@ -440,7 +448,7 @@
 - [カメラ補助](https://www.nicovideo.jp/watch/sm39701988)
   - `カメラ補助プラグイン v1.7`
 - エフェクト並び替え
-  - `SortEffect v0.4`
+  - `SortEffect v1.1`
 
 #### [oov](https://github.com/oov)
 
