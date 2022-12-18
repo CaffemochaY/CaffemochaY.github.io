@@ -19,7 +19,7 @@
 - [x264guiEx](https://github.com/rigaya/x264guiEx)
   - `x264guiEx 3.09`
 - [L-smash Works(Mr-Ojii版)](https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds)
-  - `L-smash Works Mr-Ojii r1096`
+  - `L-smash Works Mr-Ojii r1100`
 - [ffmpegOut](https://github.com/rigaya/ffmpegOut)
   - `ffmpegOut v1.01`
   - [FFmpeg](https://ffmpeg.org/)
@@ -29,21 +29,20 @@
 ### 必須枠
 
 - [patch.aul](https://github.com/ePi5131/patch.aul)
-  - `patch.aul r42.3`
-    - <details><summary>r42.3 json setting</summary>
+  - `patch.aul r42.8`
+    - <details><summary>r42.8 json setting</summary>
 
       ```json
 
       {
         "console" : {
-          "visible" : true,
-          "rect" : [ -8, 498, 1422, 1048 ]
+          "visible" : false
         },
         "theme_cc" : {
           "layer" : {
             "height_large" : 19,
             "height_medium" : 17,
-            "height_small" : 16,
+            "height_small" : 15,
             "link_col" : "4040c0",
             "clipping_col" : "c04040",
             "lock_col" : [ "000000", "c04040" ],
@@ -57,13 +56,13 @@
             "control_col" : [ "106c6c", "18c0c0", "40d8d8" ],
             "inactive_col" : [ "606060", "808080", "909090" ],
             "clipping_col" : "c04040",
-            "clipping_height" : -3,
-            "midpt_size" : [ 4, 3, 3 ],
+            "clipping_height" : -2,
+            "midpt_size" : [ 4, 3, 2 ],
             "name_col" : [ "ffffff", "a0a0a0" ]
           },
           "timeline" : {
             "scale_col" : [ "60a0ff", "204080" ],
-            "bpm_grid_col" : [ "646464", "a0a0a0" ]
+            "bpm_grid_col" : [ "808080", "bbbbbb" ]
           }
         },
         "redo" : {
@@ -78,11 +77,13 @@
         "switch" : {
           "access_key" : false,
           "colorpalette_cache" : true,
+          "fileinfo" : true,
           "aup_scene_setting" : true,
           "exo_aviutlfilter" : true,
           "exo_sceneidx" : true,
           "exo_trackparam" : true,
           "exo_track_minusval" : true,
+          "exo_midpt_and_tra" : true,
           "exo_specialcolorconv" : true,
           "exa_fold_gui" : true,
           "tra_aviutlfilter" : true,
@@ -395,7 +396,7 @@
 
       </details>
 - [イージング選択](https://github.com/hebiiro/AviUtl-Plugin-SelectEasing)
-  - `イージング選択 version 4.2.0`
+  - `イージング選択 version 4.5.0`
 - [オブジェクトエクスプローラ](https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer)
   - `オブジェクトエクスプローラ version 2.0.2`
 - [フィルタのコピペ](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter)
@@ -449,6 +450,81 @@
   - `カメラ補助プラグイン v1.7`
 - エフェクト並び替え
   - `SortEffect v1.1`
+    - <details><summary>SortEffect_Setting.txt</summary>
+
+      ```txt
+      色調補正
+      単色化
+      グラデーション
+      色ずれ
+      クリッピング
+      斜めクリッピング
+      マスク
+      領域拡張
+      縁取り
+      オフスクリーン描画
+      シャドー
+      フェード
+      ぼかし
+      境界ぼかし
+      拡散光
+      レンズブラー
+      放射ブラー
+      方向ブラー
+      ノイズ
+      モザイク
+      ラスター
+      波紋
+      極座標変換
+      ディスプレイスメントマップ
+      オブジェクト分割
+      カメラ制御オプション
+      /ライト系
+      グロー
+      発光
+      閃光
+      ライト
+      /
+      /エッジ系
+      凸エッジ
+      エッジ抽出
+      シャープ
+      /
+      /基本効果
+      座標
+      拡大率
+      リサイズ
+      回転
+      反転
+      透明度
+      /
+      /ループ系
+      ミラー
+      画像ループ
+      /
+      /キー
+      クロマキー
+      カラーキー
+      ルミナンスキー
+      /
+      /ファイル合成
+      動画ファイル合成
+      画像ファイル合成
+      /
+      /not-use
+      ローテーション
+      モーションブラー
+      ワイプ
+      振動
+      アニメーション効果
+      スクリプト制御
+      拡張色設定
+      特定色域変換
+      インターレース解除
+      /
+      ```
+
+      </details>
 
 #### [oov](https://github.com/oov)
 
@@ -505,6 +581,11 @@
 
 - [MotionTracking_MKII_Plus](https://github.com/Mr-Ojii/MotionTracking_MKII_Plus)
   - `MotionTracking_MKII_Plus r41`
+
+#### [mimaraka](https://github.com/mimaraka)
+
+- [Curve Editor](https://github.com/mimaraka/aviutl-plugin-curve_editor)
+  - `Curve Editor v0.4.3`
 
 ---
 
