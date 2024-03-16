@@ -8,8 +8,7 @@
 
 ## LuaJIT
 
-- [LuaJIT](http://luajit.org/)からDLしてビルドする
-- もしくはビルドしてくれている[ここ](https://scrapbox.io/ePi5131/LuaJIT)からDL
+- [LuaJIT](https://github.com/Per-Terra/LuaJIT-Auto-Builds)
   - `LuaJIT-2.1.0-beta3`
 
 ## plugins
@@ -17,19 +16,19 @@
 ### in-out
 
 - [x264guiEx](https://github.com/rigaya/x264guiEx)
-  - `x264guiEx 3.09`
+  - `x264guiEx 3.27`
 - [L-smash Works(Mr-Ojii版)](https://github.com/Mr-Ojii/L-SMASH-Works-Auto-Builds)
-  - `L-smash Works Mr-Ojii r1100`
+  - `L-smash Works Mr-Ojii r1115`
 - [ffmpegOut](https://github.com/rigaya/ffmpegOut)
-  - `ffmpegOut v1.01`
+  - `ffmpegOut v1.10`
   - [FFmpeg](https://ffmpeg.org/)
     - `FFmpeg v5.0`
   - [ffmpegOut stg置き場](https://scrapbox.io/Mr-Ojii/ffmpegOut_stg%E7%BD%AE%E3%81%8D%E5%A0%B4)
 
 ### 必須枠
 
-- [patch.aul](https://github.com/ePi5131/patch.aul)
-  - `patch.aul r42.8`
+- [patch.aul](https://github.com/nazonoSAUNA/patch.aul)
+  - `patch.aul r43_ss_52`
     - <details><summary>r42.8 json setting</summary>
 
       ```json
@@ -139,7 +138,7 @@
 
       </details>
 - [InputPipePlugin](https://github.com/amate/InputPipePlugin)
-  - `InputPipePlugin v1.9`
+  - `InputPipePlugin v2.0`
 
 ### その他
 
@@ -189,7 +188,7 @@
 
       </details>
 - [お気に入りフォント選択](https://github.com/hebiiro/AviUtl-Plugin-SelectFavoriteFont)
-  - `お気に入りフォント選択 v5.2.1`
+  - `お気に入りフォント選択 v6.0.2`
     - <details><summary>xml-setting</summary>
 
       ```xml
@@ -398,11 +397,11 @@
 - [イージング選択](https://github.com/hebiiro/AviUtl-Plugin-SelectEasing)
   - `イージング選択 version 4.5.0`
 - [オブジェクトエクスプローラ](https://github.com/hebiiro/AviUtl-Plugin-ObjectExplorer)
-  - `オブジェクトエクスプローラ version 2.0.2`
+  - `オブジェクトエクスプローラ version 3.6.1`
 - [フィルタのコピペ](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter)
   - `フィルタのコピペ 1.0.0`
 - [カラーコード追加](https://github.com/hebiiro/AviUtl-Plugin-AddColorCode)
-  - `カラーコード追加 v1.1.0`
+  - `カラーコード追加 v1.2.1`
 
 #### [amate](https://github.com/amate)
 
@@ -440,7 +439,7 @@
 - [真・グループ制御](https://github.com/kumrnm/aviutl-authentic-grouping)
   - `真・グループ制御 v1.1.0`
 - [イージング設定時短](https://github.com/kumrnm/aviutl-easing-quick-setup)
-  - `easing_quick_setup v1.0.1`
+  - `easing_quick_setup v1.1.0`
 - [マウスオペレーション改](https://github.com/kumrnm/aviutl-advanced-mouse-operation)
   - `マウスオペレーション改 v1.0.0`
 
@@ -448,7 +447,7 @@
 
 - [カメラ補助](https://www.nicovideo.jp/watch/sm39701988)
   - `カメラ補助プラグイン v1.7`
-- エフェクト並び替え
+- [エフェクト並び替え](https://github.com/nazonoSAUNA/SortEffect)
   - `SortEffect v1.1`
     - <details><summary>SortEffect_Setting.txt</summary>
 
@@ -531,7 +530,7 @@
 - [PSDToolKit](https://github.com/oov/aviutl_psdtoolkit)
   - `PSDToolKit v0.2beta56`
 - [ごちゃまぜドロップス](https://github.com/oov/aviutl_gcmzdrops)
-  - `ごちゃまぜドロップス v0.4.0beta4`
+  - `ごちゃまぜドロップス v0.4.2`
   - (PSDToolKitの中に入っているファイルを上書き)
 - [拡張編集RAMプレビュー](https://github.com/oov/aviutl_rampreview)
   - `拡張編集RAMプレビュー v0.3rc7`
@@ -580,12 +579,12 @@
 #### [Mr-Ojii](https://github.com/Mr-Ojii)
 
 - [MotionTracking_MKII_Plus](https://github.com/Mr-Ojii/MotionTracking_MKII_Plus)
-  - `MotionTracking_MKII_Plus r41`
+  - `MotionTracking_MKII_Plus r89`
 
 #### [mimaraka](https://github.com/mimaraka)
 
 - [Curve Editor](https://github.com/mimaraka/aviutl-plugin-curve_editor)
-  - `Curve Editor v0.4.3`
+  - `Curve Editor v1.0.6`
 
 ---
 
@@ -711,7 +710,7 @@
 
 ### [mes](https://www.nicovideo.jp/user/56278)
 
-- [Unmult](https://github.com/mes51/AVIUtl_Unmult)
+- [Unmult](https://github.com/sevenc-nanashi/unmult.anm)
 
 ### [mina](https://www.nicovideo.jp/user/117083491)
 
@@ -733,7 +732,7 @@
 ### Mr-Ojii
 
 - [ImageLoader_M](https://github.com/Mr-Ojii/ImageLoader_M)
-- [Bevel_And_Emboss_M](https://github.com/Mr-Ojii/Bevel_And_Emboss_M)
+- [Bevel_And_Emboss_M](https://github.com/Mr-Ojii/AviUtl-Bevel_And_Emboss_M-Script)
 
 ### [Respectrum93](https://www.nicovideo.jp/user/188248)
 
